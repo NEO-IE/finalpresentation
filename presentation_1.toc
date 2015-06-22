@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Problem Statement}{19}{0}{2}
+\beamer@sectionintoc {3}{Relation Extraction as a Machine Learning Problem}{22}{0}{3}
+\beamer@sectionintoc {4}{Peculiarities of Numerical Relation Extraction}{32}{0}{4}
+\beamer@sectionintoc {5}{NumberRule: Rule Based Relation Extraction}{44}{0}{5}
+\beamer@sectionintoc {6}{Summary}{79}{0}{6}

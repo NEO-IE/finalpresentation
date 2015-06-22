@@ -1,0 +1,1089 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BA04 presentation 
+% LaTeX Template
+% Version 1.0 (14/12/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+\usepackage{color}
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+
+% tikzmark command, for shading over items
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\bibliographystyle{alpha}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\algnewcommand\algorithmicdef{\textbf{}}
+\algnewcommand\DEF{\item[\algorithmicdef]}
+
+\algnewcommand\algorithmic{\textbf{Input:}}
+\algnewcommand\INPUT{\item[\algorithmicinput]}
+
+\algnewcommand\algorithmicinputitem{}
+\algnewcommand\INPUTITEM{\item[\algorithmicinputitem]}
+
+\newcommand{\ntronitemsep}{1em}
+
+
+%TIKZ MAGIC, Stolen from http://tex.stackexchange.com/questions/15735/adding-arrows-to-each-term-of-an-equation
+
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+% Define how TiKZ will draw the nodes
+\tikzset{mathterm/.style={draw=black,fill=white,rectangle,anchor=base}}
+\tikzstyle{every picture}+=[remember picture]
+\everymath{\displaystyle}
+
+\makeatletter
+
+% Designate a term in a math environment to point to
+% Syntax: \mathterm[node label]{some math}
+\newcommand\mathterm[2][]{%
+   \tikz [baseline] { \node [mathterm] (#1) {$#2$}; }}
+
+% A command to draw an arrow from the current position to a labelled math term
+% Default color=black, default arrow head=stealth
+% Syntax: \indicate[color]{term to point to}[path options]
+\newcommand\indicate[2][black]{%
+   \tikz [baseline] \node [inner sep=0pt,anchor=base] (i#2) {\vphantom|};
+   \@ifnextchar[{\@indicateopts{#1}{#2}}{\@indicatenoopts{#1}{#2}}}
+\def\@indicatenoopts#1#2{%
+   {\color{#1} \tikz[overlay] \path[line width=1pt,draw=#1,-stealth] (i#2) edge (#2);}}
+\def\@indicateopts#1#2[#3]{%
+   {\color{#1} \tikz[overlay] \path[line width=1pt,draw=#1,-stealth] (i#2) [#3] edge (#2);}}
+
+
+\DeclareMathOperator*{\argmax}{arg\!max}
+
+\makeatother
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Numerical Relation Extraction with Minimal Supervision]{Numerical Relation Extraction with Minimal Supervision} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{} % Your name
+
+\institute[IITB] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Indian Institute of Technology Bombay\\ % Your institution for the title page
+\medskip
+\textit{} % Your email address
+}
+\date{June 2015} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+
+
+%PART 1 : Motivation
+\begin{frame}{Entities have Numerical Attributes}
+
+    \begin{figure}
+    \centering
+    \includegraphics[width = 0.5\textwidth]{images/motivation}
+  \end{figure}
+ 
+\end{frame}
+
+\begin{frame}{Entities have Numerical Attributes}
+ \begin{center}
+ \includegraphics[scale=0.45]{images/car.pdf}
+ % car.pdf: 363x272 pixel, 72dpi, 12.81x9.60 cm, bb=0 0 363 272
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Entities and Numerical Attributes}
+ 
+ \begin{itemize}
+
+  \item For popular entities, finding complete knowledge bases is possible. \pause \\~\\
+  \item data.worldbank.org, Wikipedia infoboxes, freebase ... \pause \\~\\
+  \item What about less popular entities?  \pause 
+    \begin{itemize}
+      \item What is the population of Arbit Apartments, Powai? \pause \\~\\
+      \item What is the GDP of Sugarcane Industry of India? \pause \\~\\
+      \item Percent of Internet users in Mumbai? 
+    \end{itemize}
+ \end{itemize} 
+\end{frame}
+
+\begin{frame}{Motivation}
+ \begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 1366 741,scale=0.25]{images/resultindia.png}
+ % resultindia.png: 1366x741 pixel, 72dpi, 48.19x26.14 cm, bb=0 0 1366 741
+\end{figure}
+\end{frame}
+
+\begin{frame}{Motivation}
+ \begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 1366 741,scale=0.25]{images/resultmumbai.png}
+ % resultindia.png: 1366x741 pixel, 72dpi, 48.19x26.14 cm, bb=0 0 1366 741
+\end{figure}
+\end{frame}
+
+\begin{frame}{Motivation}
+
+\begin{itemize}
+ \item  Web is huge.  \pause \\~\\
+ \item Probably, there is some page which contains the information we are looking for. \pause \\~\\
+ \item The way in which you express a fact about an entity depends on the fact, and not the entity. \pause \\~\\
+ \item We may expect \textbf{the sentence structure} \footnote{More on this in the coming slides} to be similar. \pause
+ \begin{itemize}
+    \item Population of India reached 1.3 billion, making it the second largest country in the world. \pause \\~\\
+    \item Population of Arbit Apartments, Powai reached 1300.
+ \end{itemize}
+ 
+\end{itemize}
+\end{frame}
+
+
+
+\section{Problem Statement}
+\begin{frame}{Problem Statement}
+ \begin{itemize}
+  \item Given that we know a lot of facts about some entities, can we train extractors that run over the web and pull similar facts about other entities?
+ \end{itemize}
+\end{frame}
+\begin{frame}{Problem Statement}
+
+\begin{itemize}
+ 
+ \item  The knowledge is scattered in unstructured text on the Web.
+ \begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 1139 53,scale=0.47]{images/ex_2.png}
+ % ex_1.png: 1139x53 pixel, 72dpi, 40.18x1.87 cm, bb=0 0 1139 53
+\end{figure}
+
+ \begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 1139 53,scale=0.30]{images/ex_3.png}
+ % ex_1.png: 1139x53 pixel, 72dpi, 40.18x1.87 cm, bb=0 0 1139 53
+\end{figure}
+
+
+  \item Can such facts be extracted automatically?
+\end{itemize}
+
+\end{frame}
+\begin{frame}{Problem Statement}
+\begin{itemize}
+ \item Formally, train extractors that can harness the Web for numerical relations, where relations are 3-tuples linking an entity
+to a number \\~\\
+   
+    \begin{itemize}
+	\item  (India, \textbf{economy}, 1.842 trillion USD) \\~\\
+	\item  (China, \textbf{internet users},  590.56 million) \\~\\
+	\item  (USA, \textbf{land area}, 2,959,054 square mile)
+    \end{itemize}
+
+ \end{itemize}
+\end{frame}
+
+%PART 2 : Relation extraction as a machine learning problem
+
+\section{Relation Extraction as a Machine Learning Problem}
+
+\begin{frame}{Relation Extraction as a Machine Learning Problem}
+ \begin{itemize}
+  \item \textbf{Structure} and \textbf{content} of sentences expressing the same relations can be \emph{expected} to be similar.  \\~\\
+ \begin{itemize}
+      \item The population of Australia is estimated to be 23,622,400 as of 7 October 2014. \\~\\
+      \item According to an official estimate for 1 June 2014, the population of Russia is 143,800,000.   
+   \end{itemize}   
+ \end{itemize}
+\end{frame}
+\begin{frame}{Relation Extraction as a Machine Learning Problem}
+\begin{itemize}
+\item \textbf{Structure} and \textbf{content} of sentences expressing the same relations can be \emph{expected} to be similar.  \\~\\
+ \begin{itemize}   
+    \item At 17,075,400 square kilometres, Russia is the largest country in the world. \\~\\
+    \item With an area of 504,030 $km^{2}$, Spain is the second largest country in Western Europe. 
+    \end{itemize}
+ \end{itemize}
+\end{frame}
+\begin{frame}{Relation Extraction as a Machine Learning Problem}
+ 
+ \begin{itemize}
+  \item Redundancy in grammatical features and dependencies of the sentences expressing same relation. \pause 
+     \begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{images/ex_4}
+  \end{figure} \pause
+  
+   \begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{images/ex_5}
+  \end{figure}
+ \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Possible Workflow} \pause
+
+\begin{algorithmic}[1]
+\State \textbf{Collect enough examples} for each relation so that there are sufficient patterns and enough redundancy to exploit. \\
+\State \textbf{Extract features} (important keywords, grammatical structure, parse trees, etc.) for these sentences. \\
+\State \textbf{Train} a multi-class classifier on this training data. \\
+\For{$sentence\ s \in Corpus $}
+\State \textbf{Extract} features for $s$.
+\State \textbf{Predict} the relation using the model for these features.
+\State \textbf{Store} the fact into a database.
+\EndFor
+\end{algorithmic}
+\end{frame}
+
+\begin{frame}{Challenge}
+ \begin{itemize}
+  \item Large Corpus ($\sim$16 million sentences), hand labeling is out of question \pause \\~\\
+  \item Need lots of training data to learn high quality extractors \pause \\~\\
+  \item Is there a middle ground?
+ \end{itemize}
+\end{frame}
+---------------------------------
+
+% A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\section{Peculiarities of Numerical Relation Extraction}
+\begin{frame}
+\frametitle{Peculiarities of Numerical Relation Extraction}
+\framesubtitle{Weak Signal from Distant Supervision}
+
+\begin{itemize}
+
+\item Quantities can appear in far more contexts than typical entities. \pause
+	\begin{itemize}
+    	\item ("Bill Gates", "Microsoft") vs. ("India", "11\%") \pause
+    \end{itemize}
+ \item Noise is more for the small whole numbers that are unit\-less or with popular units (e.g, percent) \pause
+ 	\begin{itemize}
+    	\item 1 or 5\% vs. 11.42145 or 330 m/sec \pause
+    \end{itemize}
+ \item Regular IE have fewer cases of entity disambiguation as compared to numerical IE \pause
+ 	\begin{itemize}
+    	\item Entities with name "Michael Jordan" vs. value "10" associated with a single entity 
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Peculiarities of Numerical Relation Extraction}
+\framesubtitle{Match Mines}
+
+\begin{itemize}
+
+\item When a certain Knowledge Base entry causes an unprecedented number of matches in the corpus.
+
+\item Typically happens when \emph{arg1} is a popular entity and \emph{arg2} is a small whole number.
+	\begin{itemize}
+		\item Example TODO
+	\end{itemize}
+\end{itemize}
+
+\end{frame}
+\begin{frame}
+\frametitle{Peculiarities of Numerical Relation Extraction}
+\framesubtitle{Units}
+\begin{itemize}
+\item Unit acts as types for numbers.
+\item Same quantity may be expressed with different unit
+	\begin{itemize}
+    	\item 20 kms or 12.4 miles
+   	\end{itemize}
+\item Unit extractor needs to perform unit conversions for effective matching and extraction
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Peculiarities of Numerical Relation Extraction}
+\framesubtitle{Change Words}
+
+\begin{itemize}
+\item Often sentences express the change in the value of a relation instead of, or in addition to, the actual value itself.
+\begin{itemize}
+\item Amazon stock price increased by \$35 to close at \$510.
+\item India's tiger population sees 30\% increase.
+\item Ford poised to raise dividend by 20\% even as profit declines.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Peculiarities of Numerical Relation Extraction}
+\framesubtitle{Relation/Argument Scoping}
+
+\begin{itemize}
+\item Additional modifiers to arguments or relation words may subtly change the meaning and confuse the extractor.
+\begin{itemize}
+\item \emph{rural} literacy rate of India
+\item literacy rate of \emph{rural} India
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Peculiarities of Numerical Relation Extraction}
+\framesubtitle{Keywords}
+
+\begin{itemize}
+\item Many numerical relations are described using one or a handful of keywords.
+\begin{itemize}
+\item For example, sentences expressing \emph{inflation rate}, \emph{GDP}, \emph{life expectancy} would often use these keywords.
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+\section{NumberRule: Rule Based Relation Extraction}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Rule Based IE}
+\framesubtitle{Academia vs. Industry}
+
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/longliverulebased.eps}
+\end{figure}
+
+\footnote{from \cite{chiticariu2013rule}}
+
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{NumberRule}
+\framesubtitle{Motivation}
+
+\begin{block}{From \cite{shortestpathdep}}
+If $e_1$ and $e_2$ are two entities mentioned in the same
+ sentence such that they are observed to be in a relationship R, our hypothesis stipulates that the contribution of the sentence dependency graph to establishing the relationship $R(e_1, e_2)$ is almost exclusively concentrated in the shortest path between $e_1$ and $e_2$ in the undirected version of the dependency graph.
+\end{block}
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/dep.eps}
+\end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{NumberRule}
+\framesubtitle{Motivation}
+
+\begin{block}{From \cite{shortestpathdep}}
+If \textbf{$e_1$ and $e_2$ }are two entities mentioned in the same
+ sentence such that they are observed to be in a \textbf{relationship R}, our hypothesis stipulates that the contribution of the sentence \textbf{dependency graph} to establishing the relationship $R(e_1, e_2)$ is almost \textbf{exclusively concentrated in the shortest path} between $e_1$ and $e_2$ in the undirected version of the dependency graph.
+\end{block}
+\begin{itemize}
+\item When looking for clues for relation extraction, dependency path is a good place to start.
+\item In the case of Numerical Relations, we already know what to look for: \textit{keywords}.
+\item Need to take care of modifications to the entities, delta words
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{NumberRule}
+\framesubtitle{Definitions}
+\begin{itemize}
+\setlength\itemsep{\ntronitemsep}
+
+ \item \textbf{Keywords}  Words that might help in identifying relations.(\textit{GDP}, \textit{internet}, \textit{inflation})
+ \item \textbf{Delta words} Words that indicate that the mention expresses a change, and not the actual relation. \\ (\textit{change}, \textit{up}, \textit{down}, \textit{increased}, \textit{changed}, \textit{risen})
+  \item \textbf{Modifiers} A word $m$ is said to be a modifier of the word $w$ if there is a modifying dependency from $m$ to $w$.\\ (\textit{blue} modifies \textit{whale} in \emph{\textbf{blue} whale}, \emph{\textbf{urban} population}).
+  \item \textbf{Augmented Phrase} For a word $W$, the \emph{Augmented Phrase} $W'$ is formed by concatenating $W$ with words $P$ such that $W$ and $P$ are related via a \emph{modifying dependency}. \\(for the word \textit{whale}, \textbf{\textit{blue whale}} is the augmented phrase)
+\end{itemize}
+
+\end{frame}
+
+
+%------------------------------------------------
+\begin{frame}[allowframebreaks]
+\frametitle{NumberRule}
+\framesubtitle{Extraction Algorithm}
+\begin{algorithmic}[1]
+\State Given a sentence S, let $E_S$ be the set of entities and $N_S$ be the set of numbers that are present in the sentence.
+\State Let $R$ be the set of relations
+\State Let $LegalUnits(r)$ be the set of possible units for a relation $r$ in $R$ 
+\State Let $Unit(n)$ be the unit for a given number $n$ as returned by the unit tagger. 
+\State Let $K$ be the set of keywords 
+\State Let $\Delta$ be the set of delta words
+\For{$(e, n) \in (E_S \times N_S)$} //For all entity-number pairs
+
+\State $P \gets$ the set of words in the dependency path between $e$ and $n$
+\For{$r \in R$}
+\If{$P \cap K_r = \emptyset$} //keyword is not present
+\State continue;
+\EndIf
+\item[]
+\If{$P \cap \Delta \not = \emptyset$} //delta words are present
+\State continue;
+\EndIf
+\If{$Unit(n) \not \in LegalUnits(r)$} //incompatible units?
+\State continue;
+\EndIf
+
+\State Extract $r(e', r', n)$, where e' and r' are the augmented entity and relation phrases.
+\EndFor
+\EndFor
+\end{algorithmic}
+\end{frame}
+
+
+%-------------------------------------------------------------
+\begin{frame}
+\frametitle{NumberRule}
+\framesubtitle{NumberRule: Extractions}
+%\subsection{Example}
+\begin{itemize}
+\item ``The estimated population for 2014 of the {\color{blue}Australian} continent is about {\color{blue}36.25 million} people''
+
+\item \tikzmark{}{{\color{blue}Australian}$\xrightarrow{amod}$continent$\xrightarrow{prep\_of}$2014
+$\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{nsubj}$people$
+\xrightarrow{num}$million$\xrightarrow{number}${\color{blue}36.25}}
+
+\item ``The estimated population for 2014 of the {\color{blue}Australian} continent increased by about {\color{blue}3.25 million} people''
+
+\item {\color{blue}Australian}$\xrightarrow{amod}$continent$\xrightarrow{prep\_of}$2014 $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{nsubj}$ \textbf{\color{red}increased}$\xrightarrow{prep\_by}$people$\xrightarrow{num}$million $\xrightarrow{number}${\color{blue}36.25}
+
+
+\item As an example of the importance of using augmented phrases, consider the sentence:
+
+\item As another example, consider ``Female population of urban india is 23 million''.  The shortest path between the arguments  (India, 23) is (Population, million) and thus a vanilla
+system will yield the wrong extraction \textbf{ POP(India, 23 million)}, instead of the correct \textbf{POP(urban india, female population, 23 million)}.
+
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+%Introduce graphical models here, tricky!
+\newcommand{\vz}{{\mathbf z}}
+\newcommand{\vn}{{\mathbf n}}
+\newcommand{\cR}{{\cal R}}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Probabilistic Graphical Models}
+\framesubtitle{In a Nutshell}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Probabilistic Graphical Models}
+\framesubtitle{In a Nutshell}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Definitions}
+For an entity $e$ (India)
+\begin{itemize}
+ \item Let $S_e$ be the set of sentences that express the entity $e$.
+ \item Let $Q_e$ denote the distinct numbers with unit that appear in footnote. We use the unit tagger by \cite{sarawagi2014} to identity units of numbers in the text and to convert all
+unit variants like "mile", "km" to a canonical SI unit, "meter".
+\item $\forall q \in Q_e$, let $S_{e,q} \subseteq S_e$ denote the sentences that mention $e$ and $q$. 
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Random Variables}
+For each entity $e$, for each number $n_q$
+\begin{itemize}
+\item \textbf{$n_r^q$, number nodes} Binary, 1 if the number $q$ is related to $e$ via relation $r$. 
+\end{itemize}
+\vspace{3em}
+For each mention, $s \in S_{e,q}$
+\begin{itemize}
+
+\item \textbf{$z_s$, mention nodes} multi-ary, can take values $r \in \cR = (R\, \cup \perp)$, set to $r \in R$ if the sentence expresses any of the $R$ relations, else set to $z_s = \perp$.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Potentials}
+\end{frame}
+%------------------------------------------------
+
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Features: Example}
+\begin{table}
+\begin{tabular}{|l|l|}
+\hline
+Feature type & Features \\
+\hline
+Fixed Keywords & key: life	key: expect \\
+\hline
+All Keywords & key: life	key: expect	key: world \\
+\hline
+Number Features & Num: Billion	Num: Integer \\
+\hline
+\end{tabular} \end{table}
+
+{\color{red}\emph{Afghanistan , which is mostly rural , has one of the lowest life expectancy rate in the world at 44 year for both man and woman}}. 
+
+The time "44 year" is converted to the SI unit, which comes out to be 
+around 1.3 billion and thus the feature Num: Billion is fired.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Features}
+\begin{itemize}
+
+\item \textbf{Mintz Features} Lexical and Synctactic features derived from POS tags and dependency path \cite{mintz}
+
+\item \textbf{Keyword Features}
+Derived from a pre-specified list of keywords per relation.
+\item \textbf{Number Features} Capture Information on the magnitude, type (whole, fraction) can also be useful for relation extraction.
+
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{Perceptron}
+\begin{itemize}
+\item The classical perceptron forms the core of our training procedure.
+\end{itemize}
+\begin{equation}
+\theta \gets \theta + \eta * (t_i - o_i) * x_i
+\end{equation}
+
+\begin{gather}
+   \mathterm[t1]{\theta}
+   \gets
+   \mathterm[t2]{\theta}   +
+   \eta * (
+   \mathterm[t3]{t_i} - 
+   \mathterm[t4]{o_i} ) * 
+   \mathterm[t5]{x_i} ) 
+\end{gather}
+
+
+\begin{itemize}
+   \item  Weights \indicate[red]{t2}[out=0,in=-75]
+   \item  True Label \indicate[blue]{t3}[out=0,in=-90]
+   \item  Observed Label \indicate[yellow]{t4}[out=0,in=-90]
+   \item  Feature (Binary) \indicate[green]{t5}[out=0,in=-90]
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{True Labels: Distant Supervision}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.8\textheight]{images/truelabel11.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{True Labels: Distant Supervision}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.8\textheight]{images/truelabel12.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{True Labels: Distant Supervision}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.8\textheight]{images/truelabel13.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{True Labels: Distant Supervision}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.8\textheight]{images/truelabel14.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{Observed Labels: Full Inference}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.85\textheight]{images/fullinf_1.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{Observed Labels: Full Inference}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.85\textheight]{images/fullinf_2.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{Observed Labels: Full Inference}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.85\textheight]{images/fullinf_3.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{Observed Labels: Full Inference}
+\begin{figure}
+\includegraphics[width=\textwidth, height=0.85\textheight]{images/fullinf_4.eps}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{Updating Feature Weights}
+\begin{itemize}
+\setlength{\itemsep}{1em}
+\item Let $f_1, f_2, ..., f_k$ be the features fired for \textit{Hungarian inflation  accelerate to 3.8 percent in May, defying...Thursday.}
+\item Examples: \textbf{key: inflation}, \textbf{Num: Units} and so on.
+\item $\theta_{f_i}^{INT} \gets \theta_{f_i}^{INT} - 1$
+\item $\theta_{f_i}^{INF} \gets \theta_{f_i}^{INF} + 1$
+\item These features actually indicate inflation relation, and not the internet relation!
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Extraction}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Experiments}
+\framesubtitle{Training Corpus}
+
+\begin{itemize}
+\item Tac KBP 2014 corpus comprising roughly 3 million documents from NewsWire, discussion forums, and the Web.
+\item Knowledge base is compiled from data.worldbank.org
+\begin{itemize}
+\item Dataset contains 1,281 numeric indicators for 249 countries, with over 4 million base facts.
+\item Dataset is normalized by converting all the values to their SI base unit value.
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%--------------------------------------------------
+
+\begin{frame}
+\frametitle{Experiments}
+\framesubtitle{Test Set}
+
+\begin{itemize}
+\item Mix of 430 sentences from TAC corpus and sentences from Web search on relation name.
+\end{itemize}
+
+\begin{small}
+\begin{table}[h]
+\centering
+%     \begin{adjustbox}{width=\textwidth,center}
+    % \begin{adjustbox}{center}
+     \begin{adjustbox}{max width=\textwidth}
+        \begin{tabular}{|l|c|c|c|}
+            \hline
+             \textbf{Relation} &  \textbf{Units} & \textbf{Positive} &  \textbf{Negative} \\
+            \hline
+            \hline
+             Land Area & Sq. Km & 57 &  17 \\
+            \hline
+             Population & - & 51 &  300 \\
+            \hline
+            
+            \multicolumn{1}{|l|}{Inflation}  & \multicolumn{1}{c}{percent} & \multicolumn{1}{|c|}{51} & \multirow{2}{*}{84} \\\cline{1-2}
+            \multicolumn{1}{|l|}{Internet Users} & \multicolumn{1}{c}{percent} & \multicolumn{1}{|c|}{15} & \\\cline{1-2} 
+            
+            \hline
+            
+            \multicolumn{1}{|l|}{FDI} & \multicolumn{1}{c}{\$ (USD)} & \multicolumn{1}{|c|}{10} & \multirow{3}{*}{35} \\\cline{1-2}
+            \multicolumn{1}{|l|}{GDP} & \multicolumn{1}{c}{\$ (USD)} & \multicolumn{1}{|c|}{8} & \\\cline{1-2}
+            \multicolumn{1}{|l|}{Goods Export} & \multicolumn{1}{c}{\$ (USD)} & \multicolumn{1}{|c|}{11} & \\\cline{1-2}
+            
+            \hline
+             Life Expectancy & year & 15 &  34 \\
+            \hline
+             Electricity Production & kWh & 13 &  6 \\
+            \hline
+             $CO_{2}$ Emissions & kiloton &  8 &  16\\
+            \hline
+        \end{tabular}
+	\end{adjustbox}
+%     \vspace{ - 05 mm}
+    \caption{Test corpus statistics: The third column is the number of instances per relation and the fourth column is the number of "none-on-the-above" ($\perp$) grouped by relation of the same unit.}
+    \label{tab:test_data_stats}
+\end{table}
+\end{small}
+
+\end{frame}
+
+
+%----------------------------------------------------
+
+\begin{frame}
+\frametitle{Baseline Algorithms}
+\begin{itemize}
+\setlength\itemsep{2em}
+\item \textbf{Recall \textendash Prior Baseline: } For each unit, predict the relation with the highest \emph{test} prior ignoring the "none-of-the-above" class.
+\begin{itemize}
+	\item All the numbers with the unit "USD" will be labeled 'Goods Exported' since it is most frequent class ignoring the "none-of-the-above" class. \pause
+\end{itemize}
+
+
+\item \textbf{MultiR ++ : Adapting MultiR for Numerical Relations}
+\begin{itemize}
+\item Added unit tagger as in our algorithms for identifying and normalizing numbers and units.
+\item Added our partial matching (using $\pm \delta_r\%$) technique in distant supervision.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Results}
+\framesubtitle{Numbertron vs NumberRule vs Baselines}
+
+
+\begin{small}
+\begin{table}
+\begin{tabular}{|l|c|c|c|}
+
+\hline
+\textbf{System} &  \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score}\\
+\hline 
+\hline
+
+MultiR++ & 31.81 & 28.10 & 29.84\\
+\hline
+Recall-Prior & 28.18 & 86.19 & 42.47\\
+\hline
+NumberRule & 59.30 & 53.60 & 56.30\\
+\hline
+NumberTron & 60.93 & 66.92 & 63.78 \\
+\hline
+\end{tabular}
+\caption{Aggregate results. NumberTron outperforms all other methods.}
+\label{main_results_table}
+\end{table}
+\end{small}
+\begin{itemize}
+\item Statistical method like NumberTron outperforms NumberRule on increased recall, which jumps from 53.6\% to 67%
+\item MultiR++ performs poorly because it does not model peculiarities of numerical relations.
+\end{itemize}
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Analysis}
+\framesubtitle{NumberTron vs NumberRule}
+
+\begin{itemize}
+	\item NumberRule's missed recall is primarily because of not having a keyword on the dependency path.
+    \begin{itemize}
+    \setlength\itemsep{1em}
+    	\item "{\em Turkey's central bank said Wednesday it expects the annual inflation rate to reach 6.09 percent at the end of 2009 , lower than the official target of 7.5 percent.}"
+        \item Turkey $\xrightarrow{poss}$ bank $\xrightarrow{nsubj}$ said $\xrightarrow{ccomp}$ expects $\xrightarrow{xcomp}$ reach $\xrightarrow{dobj}$ percent $\xrightarrow{num}$ 6.09
+        \item Since keyword 'inflation' is not on the shortest dependency path between Turkey and 6.09, NumberRule does not extract.
+        \item Since NumberTron combines evidences from multiple features such as number's range, presence of 'inflation' in context and dependency path features.
+    \end{itemize}
+\end{itemize}
+
+
+\end{frame}
+%---------------------------------------------------
+
+\begin{frame}
+\frametitle{Ablation tests}
+\framesubtitle{of various configurations of NumberTron}
+
+\begin{table}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|ccc|ccc|ccc|}
+%\begin{small}
+\hline
+%\textbf{Keyword Features} & 
+\textbf{Distant Supervision} &  \multicolumn{3}{|c|}{\textbf{Simple OR}} &  \multicolumn{3}{|c|}{\textbf{Atleast-K}} & \multicolumn{3}{|c|}{\textbf{Agreeing-K}} \\
+\hline
+	    & P & R & F1 & P & R & F1 & P & R & F1\\
+\hline 
+\hline
+
+%Fixed Keywords &
+KB & 43.24 & 50.93 & 46.54 & 40.05 & 53.93 & 45.97 & 35.20 & 44.52 &  39.35\\
+\hline
+%Fixed Keywords & 
+Keywords & 43.35 & 73.22 & 54.46 & 43.69 & 73.62 & 54.83 & 45.97 & 70.80 & 55.74 \\
+\hline
+%Fixed Keywords & 
+KB + Keywords & 61.56 & 64.96 & 63.21 & 60.93 & 66.92 & 63.78 & 63.46 & 60.21 & 61.79\\
+\hline
+
+\end{tabular}
+\end{adjustbox}
+\caption{Comparison of various configurations for NumberTron}
+\label{table:numbertronconfigs}
+%\end{small}
+\end{table}
+
+\begin{itemize}
+\item Keywords are crucial and KB in conjunction with keyword-based labeling adds significant value.
+\end{itemize}
+
+\end{frame}
+
+%---------------------------------------------------
+
+\begin{frame}
+\frametitle{Ablation tests}
+\framesubtitle{of feature templates for NumberTron}
+
+\begin{table}
+\begin{tabular}{|l|c|c|c|}
+%\begin{small}
+\hline
+Features & Precision & Recall & F1-score \\
+\hline
+\hline
+Mintz features only & 22.85 & 36.86 & 28.21 \\
+\hline
+Keyword features only & 51.24 & 52.55 & 51.89 \\
+\hline
+Mintz + Keyword & 47.10 & 39.04 & 42.71\\
+\hline
+Mintz + Number & 17.80 & 35.03 & 23.67 \\
+\hline
+Keyword + Number & 45.15 & 69.70 & 54.80\\
+\hline
+Mintz + Keyword + Number & \emph{60.93} & \emph{66.92} & \emph{63.78}\\
+\hline
+\end{tabular}
+\caption{Ablation tests of feature templates for NumberTron}
+\label{tab:ablationtests}
+%\end{small}
+\end{table}
+
+\begin{itemize}
+\item Large set of Mintz features confuses the classifier; Keyword features are much effective in learning.
+\end{itemize}
+
+
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Results}
+\framesubtitle{NumberTron vs NumberRule}
+
+\begin{table}
+% \begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|c|c|}
+%\begin{small}
+\hline
+%\textbf{Relation} &  \multicolumn{3}{c|}{\textbf{Numbertron}} &  \multicolumn{3}{|c|}{\textbf{NumberRule}} \\
+%\hline
+Relation & NumberTron F1 & NumberRule F1\\
+\hline
+\hline
+FDI & 0 & 50.00\\
+\hline
+Life Expectancy & 68.96 & 69.50\\
+\hline
+Internet Users & 55.73 & 54.54\\
+\hline
+Electricity Prod. & 50.00 & 62.50\\
+\hline
+GDP & 57.14 & 42.80\\
+\hline
+$CO_{2}$ Emissions & 47.61 & 53.30\\
+\hline
+Inflation & 88.40 & 56.25\\
+\hline
+Goods export & 75.00 & 35.20\\
+\hline
+Population & 49.99 & 60.30\\
+\hline
+Land Area & 57.44 & 52.22\\
+\hline
+\end{tabular}
+%\end{adjustbox}
+\caption{Per relation F1 scores for NumberRule and best configuration of NumberTron}
+\label{tab:perrelscore}
+%\end{small}
+\end{table}
+
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Analysis}
+\framesubtitle{per relation analysis of NumberTron vs NumberRule}
+\begin{itemize}
+\setlength\itemsep{1em}
+\item For FDI relation, NumberTron does not make a extraction because in our corpus sentence expressing the relation are rare.
+\item Inflation and Population are well represented in training corpus and hence higher recall.
+\end{itemize}
+\end{frame}
+%---------------------------------------------------
+
+%---------------------------------------------------
+\section{Summary}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}[allowframebreaks]
+        \frametitle{References}
+        \bibliographystyle{amsalpha}
+        \bibliography{numrel.bib}
+\end{frame}
+\end{document}

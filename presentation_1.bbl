@@ -1,0 +1,33 @@
+\begin{thebibliography}{MBSJ09}
+
+\bibitem[BM05]{shortestpathdep}
+Razvan~C. Bunescu and Raymond~J. Mooney.
+\newblock A shortest path dependency kernel for relation extraction.
+\newblock In {\em {HLT/EMNLP} 2005, Human Language Technology Conference and
+  Conference on Empirical Methods in Natural Language Processing, Proceedings
+  of the Conference, 6-8 October 2005, Vancouver, British Columbia, Canada},
+  2005.
+
+\bibitem[CLR13]{chiticariu2013rule}
+Laura Chiticariu, Yunyao Li, and Frederick~R Reiss.
+\newblock Rule-based information extraction is dead! long live rule-based
+  information extraction systems!
+\newblock In {\em EMNLP}, pages 827--832, 2013.
+
+\bibitem[MBSJ09]{mintz}
+Mike Mintz, Steven Bills, Rion Snow, and Daniel Jurafsky.
+\newblock Distant supervision for relation extraction without labeled data.
+\newblock In {\em {ACL} 2009, Proceedings of the 47th Annual Meeting of the
+  Association for Computational Linguistics and the 4th International Joint
+  Conference on Natural Language Processing of the AFNLP, 2-7 August 2009,
+  Singapore}, pages 1003--1011, 2009.
+
+\bibitem[SC14]{sarawagi2014}
+Sunita Sarawagi and Soumen Chakrabarti.
+\newblock Open-domain quantity queries on web tables: annotation, response, and
+  consensus models.
+\newblock In {\em The 20th {ACM} {SIGKDD} International Conference on Knowledge
+  Discovery and Data Mining, {KDD} '14, New York, NY, {USA} - August 24 - 27,
+  2014}, pages 711--720, 2014.
+
+\end{thebibliography}
