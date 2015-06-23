@@ -1,8 +1,9 @@
 \beamer@endinputifotherversion {3.24pt}
 \select@language {english}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Problem Statement}{19}{0}{2}
-\beamer@sectionintoc {3}{Relation Extraction as a Machine Learning Problem}{22}{0}{3}
-\beamer@sectionintoc {4}{Peculiarities of Numerical Relation Extraction}{32}{0}{4}
-\beamer@sectionintoc {5}{NumberRule: Rule Based Relation Extraction}{39}{0}{5}
-\beamer@sectionintoc {6}{Summary}{77}{0}{6}
+\beamer@sectionintoc {2}{Problem Statement}{20}{0}{2}
+\beamer@sectionintoc {3}{Relation Extraction as a Machine Learning Problem}{24}{0}{3}
+\beamer@sectionintoc {4}{Peculiarities of Numerical Relation Extraction}{35}{0}{4}
+\beamer@sectionintoc {5}{NumberRule: Rule Based Relation Extraction}{43}{0}{5}
+\beamer@sectionintoc {6}{NumberTron: Probabilistic Relation Extraction}{52}{0}{6}
+\beamer@sectionintoc {7}{Summary}{81}{1}{7}

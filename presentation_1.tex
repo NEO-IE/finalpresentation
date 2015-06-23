@@ -85,6 +85,17 @@
 \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage[english]{babel}
@@ -581,22 +592,13 @@ $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{ns
 \end{frame}
 %------------------------------------------------
 
+\section{NumberTron: Probabilistic Relation Extraction}
+\part{NumberTron: Probabilistic Relation Extraction}
 %Introduce graphical models here, tricky!
 \newcommand{\vz}{{\mathbf z}}
 \newcommand{\vn}{{\mathbf n}}
 \newcommand{\cR}{{\cal R}}
 
-%------------------------------------------------
-\begin{frame}
-\frametitle{Probabilistic Graphical Models}
-\framesubtitle{In a Nutshell}
-\end{frame}
-
-%------------------------------------------------
-\begin{frame}
-\frametitle{Probabilistic Graphical Models}
-\framesubtitle{In a Nutshell}
-\end{frame}
 
 %------------------------------------------------
 \begin{frame}

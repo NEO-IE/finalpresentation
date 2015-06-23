@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.4)  23 JUN 2015 23:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.4)  23 JUN 2015 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,20 +917,20 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 (./presentation_1.aux)
 \openout1 = `presentation_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -996,7 +996,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 160.
+Package hyperref Info: Link coloring OFF on input line 171.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1006,56 +1006,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count187
 )
-LaTeX Info: Redefining \ref on input line 160.
-LaTeX Info: Redefining \pageref on input line 160.
-LaTeX Info: Redefining \nameref on input line 160.
+LaTeX Info: Redefining \ref on input line 171.
+LaTeX Info: Redefining \pageref on input line 171.
+LaTeX Info: Redefining \nameref on input line 171.
 
 (./presentation_1.out) (./presentation_1.out)
 \@outlinefile=\write5
 \openout5 = `presentation_1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 160.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 171.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 160.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 171.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 160.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 171.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 160.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 160.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 160.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 171.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 160.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 160.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 160.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 171.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 160.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 160.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 160.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 171.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 160.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 160.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 171.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 160.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 171.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 160.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 160.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 160.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 160.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 160.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 171.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 160.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 171.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1081,44 +1081,44 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 160.
+LaTeX Info: Redefining \includegraphics on input line 171.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ) (./presentation_1.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 164.
+(Font)              size <5> substituted on input line 175.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./presentation_1.toc)
 [2
 
-] <images/motivation.png, id=71, 747.79375pt x 1056.94875pt>
+] [3
+
+] <images/motivation.png, id=84, 747.79375pt x 1056.94875pt>
 File: images/motivation.png Graphic file (type png)
 
 <use images/motivation.png>
-Package pdftex.def Info: images/motivation.png used on input line 187.
+Package pdftex.def Info: images/motivation.png used on input line 198.
 (pdftex.def)             Requested size: 171.14764pt x 241.89964pt.
 
-Overfull \vbox (24.16243pt too high) detected at line 187
+Overfull \vbox (24.16243pt too high) detected at line 198
  []
-
-[3
-
- <./images/motivation.png>]
-<images/car.pdf, id=78, 364.19528pt x 273.14645pt>
-File: images/car.pdf Graphic file (type pdf)
- <use images/car.pdf>
-Package pdftex.def Info: images/car.pdf used on input line 195.
-(pdftex.def)             Requested size: 163.88635pt x 122.91476pt.
 
 [4
 
- <./images/car.pdf>] [5
+ <./images/motivation.png>]
+<images/car.pdf, id=92, 364.19528pt x 273.14645pt>
+File: images/car.pdf Graphic file (type pdf)
+ <use images/car.pdf>
+Package pdftex.def Info: images/car.pdf used on input line 206.
+(pdftex.def)             Requested size: 163.88635pt x 122.91476pt.
 
-] [6
+[5
+
+ <./images/car.pdf>] [6
 
 ] [7
 
@@ -1128,154 +1128,168 @@ Package pdftex.def Info: images/car.pdf used on input line 195.
 
 ] [10
 
+] [11
+
 ]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 218.
+(pdftex.def)                using `viewport' instead on input line 229.
 
-<images/resultindia.png, id=131, 1371.1225pt x 770.88pt>
+<images/resultindia.png, id=145, 1371.1225pt x 770.88pt>
 File: images/resultindia.png Graphic file (type png)
 
 <use images/resultindia.png>
-Package pdftex.def Info: images/resultindia.png used on input line 218.
+Package pdftex.def Info: images/resultindia.png used on input line 229.
 (pdftex.def)             Requested size: 342.78062pt x 185.94469pt.
 
-Overfull \hbox (0.48532pt too wide) in paragraph at lines 218--218
- [] 
- []
-
-[11
-
- <./images/resultindia.png>]
-
-Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 226.
-
-<images/resultmumbai.png, id=138, 1371.1225pt x 770.88pt>
-File: images/resultmumbai.png Graphic file (type png)
-
-<use images/resultmumbai.png>
-Package pdftex.def Info: images/resultmumbai.png used on input line 226.
-(pdftex.def)             Requested size: 342.78062pt x 185.94469pt.
-
-Overfull \hbox (0.48532pt too wide) in paragraph at lines 226--226
+Overfull \hbox (0.48532pt too wide) in paragraph at lines 229--229
  [] 
  []
 
 [12
 
+ <./images/resultindia.png>]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 237.
+
+<images/resultmumbai.png, id=152, 1371.1225pt x 770.88pt>
+File: images/resultmumbai.png Graphic file (type png)
+
+<use images/resultmumbai.png>
+Package pdftex.def Info: images/resultmumbai.png used on input line 237.
+(pdftex.def)             Requested size: 342.78062pt x 185.94469pt.
+
+Overfull \hbox (0.48532pt too wide) in paragraph at lines 237--237
+ [] 
+ []
+
+[13
+
  <./images/resultmumbai.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 241.
+LaTeX Font Info:    Try loading font information for U+msa on input line 252.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 241.
+LaTeX Font Info:    Try loading font information for U+msb on input line 252.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [13
-
-] [14
+) [14
 
 ] [15
 
-]
-[16
+] [16
 
-] [17
+]
+[17
 
 ] [18
 
 ] [19
 
+] [20
+
+] [21
+
 ]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 272.
+(pdftex.def)                using `viewport' instead on input line 283.
 
-<images/ex_2.png, id=184, 343.2825pt x 84.315pt>
+<images/ex_2.png, id=204, 343.2825pt x 84.315pt>
 File: images/ex_2.png Graphic file (type png)
  <use images/ex_2.png>
-Package pdftex.def Info: images/ex_2.png used on input line 272.
+Package pdftex.def Info: images/ex_2.png used on input line 283.
 (pdftex.def)             Requested size: 537.33887pt x 25.00346pt.
 
-Overfull \hbox (216.94362pt too wide) in paragraph at lines 272--272
+Overfull \hbox (216.94362pt too wide) in paragraph at lines 283--283
  [] 
  []
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 272.
+(pdftex.def)                using `viewport' instead on input line 283.
 
-<images/ex_3.png, id=185, 1020.81375pt x 74.2775pt>
+<images/ex_3.png, id=205, 1020.81375pt x 74.2775pt>
 File: images/ex_3.png Graphic file (type png)
  <use images/ex_3.png>
-Package pdftex.def Info: images/ex_3.png used on input line 272.
+Package pdftex.def Info: images/ex_3.png used on input line 283.
 (pdftex.def)             Requested size: 342.98485pt x 15.95978pt.
 
-Overfull \hbox (22.5896pt too wide) in paragraph at lines 272--272
+Overfull \hbox (22.5896pt too wide) in paragraph at lines 283--283
  [] 
  []
 
-[20
+[22
 
- <./images/ex_2.png> <./images/ex_3.png>] [21
+ <./images/ex_2.png> <./images/ex_3.png>] [23
 
-] [22
+] [24
 
-] [23
+] [25
+
+] [26
 
 ]
-<images/ex_4.png, id=206, 755.82375pt x 227.85126pt>
+<images/ex_4.png, id=233, 755.82375pt x 227.85126pt>
 File: images/ex_4.png Graphic file (type png)
  <use images/ex_4.png>
-Package pdftex.def Info: images/ex_4.png used on input line 324.
+Package pdftex.def Info: images/ex_4.png used on input line 335.
 (pdftex.def)             Requested size: 273.83728pt x 82.55136pt.
 
-<images/ex_5.png, id=207, 834.11626pt x 251.94125pt>
+<images/ex_5.png, id=234, 834.11626pt x 251.94125pt>
 File: images/ex_5.png Graphic file (type png)
  <use images/ex_5.png>
-Package pdftex.def Info: images/ex_5.png used on input line 324.
+Package pdftex.def Info: images/ex_5.png used on input line 335.
 (pdftex.def)             Requested size: 273.83728pt x 82.7103pt.
 
-[24
+[27
 
  <./images/ex_4.png> <./images/ex_5.png>]
 File: images/ex_4.png Graphic file (type png)
  <use images/ex_4.png>
-Package pdftex.def Info: images/ex_4.png used on input line 324.
+Package pdftex.def Info: images/ex_4.png used on input line 335.
 (pdftex.def)             Requested size: 273.83728pt x 82.55136pt.
 File: images/ex_5.png Graphic file (type png)
 
 <use images/ex_5.png>
-Package pdftex.def Info: images/ex_5.png used on input line 324.
+Package pdftex.def Info: images/ex_5.png used on input line 335.
 (pdftex.def)             Requested size: 273.83728pt x 82.7103pt.
- [25
+ [28
 
 ]
 File: images/ex_4.png Graphic file (type png)
  <use images/ex_4.png>
-Package pdftex.def Info: images/ex_4.png used on input line 324.
+Package pdftex.def Info: images/ex_4.png used on input line 335.
 (pdftex.def)             Requested size: 273.83728pt x 82.55136pt.
 File: images/ex_5.png Graphic file (type png)
  <use images/ex_5.png>
-Package pdftex.def Info: images/ex_5.png used on input line 324.
+Package pdftex.def Info: images/ex_5.png used on input line 335.
 (pdftex.def)             Requested size: 273.83728pt x 82.7103pt.
- [26
+ [29
 
 ]
-[27
-
-] [28
-
-] [29
-
-] [30
+[30
 
 ] [31
 
+] [32
+
+] [33
+
+] [34
+
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35
+
+]
+Overfull \vbox (12.0pt too high) has occurred while \output is active []
+
+ [36]
 Package epstopdf Info: Source file: <images/popularitynumbers.eps>
 (epstopdf)                    date: 2015-06-23 22:24:51
 (epstopdf)                    size: 244406 bytes
@@ -1285,33 +1299,29 @@ pdf>
 (epstopdf)                    size: 151221 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/popularitynumbers-e
 ps-converted-to.pdf images/popularitynumbers.eps>
-(epstopdf)             \includegraphics on input line 365.
+(epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/popularitynumbers-eps-converted-to.pdf, id=251, 958.58125pt x 476.78125
+<images/popularitynumbers-eps-converted-to.pdf, id=287, 958.58125pt x 476.78125
 pt>
 File: images/popularitynumbers-eps-converted-to.pdf Graphic file (type pdf)
  <use images/popularitynumbers-eps-converted-to.pdf>
 Package pdftex.def Info: images/popularitynumbers-eps-converted-to.pdf used on 
-input line 365.
+input line 376.
 (pdftex.def)             Requested size: 239.60567pt x 119.17319pt.
+ [37
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ <./images/popularitynumbers-eps-converted-to.pdf>] [38
 
- [32
+] [39
 
-]
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
+] [40
 
- [33 <./images/popularitynumbers-eps-converted-to.pdf>] [34
+] [41
 
-] [35
+] [42
 
-] [36
-
-] [37
-
-] [38
+] [43
 
 ]
 Package epstopdf Info: Source file: <images/longliverulebased.eps>
@@ -1323,17 +1333,17 @@ pdf>
 (epstopdf)                    size: 105574 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/longliverulebased-e
 ps-converted-to.pdf images/longliverulebased.eps>
-(epstopdf)             \includegraphics on input line 456.
+(epstopdf)             \includegraphics on input line 467.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/longliverulebased-eps-converted-to.pdf, id=290, 1215.54124pt x 876.2737
+<images/longliverulebased-eps-converted-to.pdf, id=329, 1215.54124pt x 876.2737
 4pt>
 File: images/longliverulebased-eps-converted-to.pdf Graphic file (type pdf)
  <use images/longliverulebased-eps-converted-to.pdf>
 Package pdftex.def Info: images/longliverulebased-eps-converted-to.pdf used on 
-input line 456.
+input line 467.
 (pdftex.def)             Requested size: 239.60567pt x 172.72455pt.
- [39
+ [44
 
  <./images/longliverulebased-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/dep.eps>
@@ -1344,47 +1354,45 @@ Package epstopdf Info: Source file: <images/dep.eps>
 (epstopdf)                    size: 69161 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/dep-eps-converted-t
 o.pdf images/dep.eps>
-(epstopdf)             \includegraphics on input line 471.
+(epstopdf)             \includegraphics on input line 482.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/dep-eps-converted-to.pdf, id=303, 817.0525pt x 121.45375pt>
+<images/dep-eps-converted-to.pdf, id=342, 817.0525pt x 121.45375pt>
 File: images/dep-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/dep-eps-converted-to.pdf>
-Package pdftex.def Info: images/dep-eps-converted-to.pdf used on input line 471
+Package pdftex.def Info: images/dep-eps-converted-to.pdf used on input line 482
 .
 (pdftex.def)             Requested size: 239.60567pt x 35.61542pt.
- [40
+ [45
 
  <./images/dep-eps-converted-to.pdf>]
-[41
+[46
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 504.
+(Font)              using `OT1/cmss/bx/n' instead on input line 515.
 
-[42
-
-] [43
-
-] [44
-
-
-] [45
-
-]
-Underfull \hbox (badness 10000) in alignment at lines 581--581
-[][] 
- []
-
-[46
-
-] [47
+[47
 
 ] [48
 
 ] [49
+
+
+] [50
+
+]
+Underfull \hbox (badness 10000) in alignment at lines 592--592
+[][] 
+ []
+
+[51
+
+] [52
+
+] [53
 
 ]
 Package epstopdf Info: Source file: <images/numbertronmodel.eps>
@@ -1396,29 +1404,29 @@ f>
 (epstopdf)                    size: 20056 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/numbertronmodel-eps
 -converted-to.pdf images/numbertronmodel.eps>
-(epstopdf)             \includegraphics on input line 623.
+(epstopdf)             \includegraphics on input line 625.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/numbertronmodel-eps-converted-to.pdf, id=369, 485.815pt x 354.32375pt>
+<images/numbertronmodel-eps-converted-to.pdf, id=402, 485.815pt x 354.32375pt>
 File: images/numbertronmodel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/numbertronmodel-eps-converted-to.pdf>
 Package pdftex.def Info: images/numbertronmodel-eps-converted-to.pdf used on in
-put line 623.
+put line 625.
 (pdftex.def)             Requested size: 239.60567pt x 174.7501pt.
- [50
+ [54
 
- <./images/numbertronmodel-eps-converted-to.pdf>] [51
-
-] [52
-
-] [53
-
-] [54
-
-] [55
+ <./images/numbertronmodel-eps-converted-to.pdf>] [55
 
 ] [56
+
+] [57
+
+] [58
+
+] [59
+
+] [60
 
 ]
 Package epstopdf Info: Source file: <images/truelabel11.eps>
@@ -1429,21 +1437,21 @@ Package epstopdf Info: Source file: <images/truelabel11.eps>
 (epstopdf)                    size: 16454 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel11-eps-con
 verted-to.pdf images/truelabel11.eps>
-(epstopdf)             \includegraphics on input line 742.
+(epstopdf)             \includegraphics on input line 744.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel11-eps-converted-to.pdf, id=418, 464.73625pt x 328.22626pt>
+<images/truelabel11-eps-converted-to.pdf, id=452, 464.73625pt x 328.22626pt>
 File: images/truelabel11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel11-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel11-eps-converted-to.pdf used on input 
-line 742.
+line 744.
 (pdftex.def)             Requested size: 342.3039pt x 208.92218pt.
 
-Overfull \vbox (16.78497pt too high) detected at line 742
+Overfull \vbox (16.78497pt too high) detected at line 744
  []
 
-[57
+[61
 
  <./images/truelabel11-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/truelabel12.eps>
@@ -1454,21 +1462,21 @@ Package epstopdf Info: Source file: <images/truelabel12.eps>
 (epstopdf)                    size: 16169 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel12-eps-con
 verted-to.pdf images/truelabel12.eps>
-(epstopdf)             \includegraphics on input line 753.
+(epstopdf)             \includegraphics on input line 755.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel12-eps-converted-to.pdf, id=430, 440.64626pt x 318.18875pt>
+<images/truelabel12-eps-converted-to.pdf, id=465, 440.64626pt x 318.18875pt>
 File: images/truelabel12-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel12-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel12-eps-converted-to.pdf used on input 
-line 753.
+line 755.
 (pdftex.def)             Requested size: 342.31088pt x 208.91765pt.
 
-Overfull \vbox (16.78044pt too high) detected at line 753
+Overfull \vbox (16.78044pt too high) detected at line 755
  []
 
-[58
+[62
 
  <./images/truelabel12-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/truelabel13.eps>
@@ -1479,21 +1487,21 @@ Package epstopdf Info: Source file: <images/truelabel13.eps>
 (epstopdf)                    size: 17188 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel13-eps-con
 verted-to.pdf images/truelabel13.eps>
-(epstopdf)             \includegraphics on input line 764.
+(epstopdf)             \includegraphics on input line 766.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel13-eps-converted-to.pdf, id=442, 400.49625pt x 281.05pt>
+<images/truelabel13-eps-converted-to.pdf, id=477, 400.49625pt x 281.05pt>
 File: images/truelabel13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel13-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel13-eps-converted-to.pdf used on input 
-line 764.
+line 766.
 (pdftex.def)             Requested size: 342.31786pt x 208.91719pt.
 
-Overfull \vbox (16.77998pt too high) detected at line 764
+Overfull \vbox (16.77998pt too high) detected at line 766
  []
 
-[59
+[63
 
  <./images/truelabel13-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/truelabel14.eps>
@@ -1504,21 +1512,21 @@ Package epstopdf Info: Source file: <images/truelabel14.eps>
 (epstopdf)                    size: 22103 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel14-eps-con
 verted-to.pdf images/truelabel14.eps>
-(epstopdf)             \includegraphics on input line 775.
+(epstopdf)             \includegraphics on input line 777.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel14-eps-converted-to.pdf, id=455, 448.67625pt x 281.05pt>
+<images/truelabel14-eps-converted-to.pdf, id=489, 448.67625pt x 281.05pt>
 File: images/truelabel14-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel14-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel14-eps-converted-to.pdf used on input 
-line 775.
+line 777.
 (pdftex.def)             Requested size: 342.30513pt x 208.91719pt.
 
-Overfull \vbox (16.77998pt too high) detected at line 775
+Overfull \vbox (16.77998pt too high) detected at line 777
  []
 
-[60
+[64
 
  <./images/truelabel14-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_1.eps>
@@ -1529,21 +1537,21 @@ Package epstopdf Info: Source file: <images/fullinf_1.eps>
 (epstopdf)                    size: 85944 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_1-eps-conve
 rted-to.pdf images/fullinf_1.eps>
-(epstopdf)             \includegraphics on input line 786.
+(epstopdf)             \includegraphics on input line 788.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_1-eps-converted-to.pdf, id=471, 444.66125pt x 403.5075pt>
+<images/fullinf_1-eps-converted-to.pdf, id=505, 444.66125pt x 403.5075pt>
 File: images/fullinf_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_1-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_1-eps-converted-to.pdf used on input li
-ne 786.
+ne 788.
 (pdftex.def)             Requested size: 342.29523pt x 221.97906pt.
 
-Overfull \vbox (16.24185pt too high) detected at line 786
+Overfull \vbox (16.24185pt too high) detected at line 788
  []
 
-[61
+[65
 
  <./images/fullinf_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_2.eps>
@@ -1554,21 +1562,21 @@ Package epstopdf Info: Source file: <images/fullinf_2.eps>
 (epstopdf)                    size: 58294 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_2-eps-conve
 rted-to.pdf images/fullinf_2.eps>
-(epstopdf)             \includegraphics on input line 797.
+(epstopdf)             \includegraphics on input line 799.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_2-eps-converted-to.pdf, id=502, 444.66125pt x 403.5075pt>
+<images/fullinf_2-eps-converted-to.pdf, id=535, 444.66125pt x 403.5075pt>
 File: images/fullinf_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_2-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_2-eps-converted-to.pdf used on input li
-ne 797.
+ne 799.
 (pdftex.def)             Requested size: 342.29523pt x 221.97906pt.
 
-Overfull \vbox (16.24185pt too high) detected at line 797
+Overfull \vbox (16.24185pt too high) detected at line 799
  []
 
-[62
+[66
 
  <./images/fullinf_2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_3.eps>
@@ -1579,21 +1587,21 @@ Package epstopdf Info: Source file: <images/fullinf_3.eps>
 (epstopdf)                    size: 113873 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_3-eps-conve
 rted-to.pdf images/fullinf_3.eps>
-(epstopdf)             \includegraphics on input line 808.
+(epstopdf)             \includegraphics on input line 810.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_3-eps-converted-to.pdf, id=532, 444.66125pt x 337.26pt>
+<images/fullinf_3-eps-converted-to.pdf, id=565, 444.66125pt x 337.26pt>
 File: images/fullinf_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_3-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_3-eps-converted-to.pdf used on input li
-ne 808.
+ne 810.
 (pdftex.def)             Requested size: 342.29523pt x 221.97989pt.
 
-Overfull \vbox (16.24268pt too high) detected at line 808
+Overfull \vbox (16.24268pt too high) detected at line 810
  []
 
-[63
+[67
 
  <./images/fullinf_3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_4.eps>
@@ -1604,41 +1612,33 @@ Package epstopdf Info: Source file: <images/fullinf_4.eps>
 (epstopdf)                    size: 124425 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_4-eps-conve
 rted-to.pdf images/fullinf_4.eps>
-(epstopdf)             \includegraphics on input line 819.
+(epstopdf)             \includegraphics on input line 821.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_4-eps-converted-to.pdf, id=562, 444.66125pt x 350.30875pt>
+<images/fullinf_4-eps-converted-to.pdf, id=596, 444.66125pt x 350.30875pt>
 File: images/fullinf_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_4-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_4-eps-converted-to.pdf used on input li
-ne 819.
+ne 821.
 (pdftex.def)             Requested size: 342.29523pt x 221.97855pt.
 
-Overfull \vbox (16.24133pt too high) detected at line 819
- []
-
-[64
-
- <./images/fullinf_4-eps-converted-to.pdf>] [65
-
-] [66
-
-] [67
-
-]
-Overfull \vbox (12.35162pt too high) detected at line 922
+Overfull \vbox (16.24133pt too high) detected at line 821
  []
 
 [68
 
-] [69
+ <./images/fullinf_4-eps-converted-to.pdf>] [69
 
 ] [70
 
 ] [71
 
-] [72
+]
+Overfull \vbox (12.35162pt too high) detected at line 924
+ []
+
+[72
 
 ] [73
 
@@ -1650,84 +1650,94 @@ Overfull \vbox (12.35162pt too high) detected at line 922
 
 ] [77
 
+] [78
+
+] [79
+
+] [80
+
+] [81
+
+] [82
+
 ]
-Underfull \hbox (badness 7631) in paragraph at lines 1156--1156
+Underfull \hbox (badness 7631) in paragraph at lines 1158--1158
 []|\OT1/cmss/m/n/10.95 A Graph-i-cal Model
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 1156--1156
+Underfull \hbox (badness 1983) in paragraph at lines 1158--1158
 \OT1/cmss/m/n/10.95 with Per-cep-tron like
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 1156--1156
+Underfull \hbox (badness 5302) in paragraph at lines 1158--1158
 \OT1/cmss/m/n/10.95 words + Nu-mer-i-cal
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 1156--1156
+Underfull \hbox (badness 3536) in paragraph at lines 1158--1158
 []|\OT1/cmss/bx/it/10.95 Handling Men-tions
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 1156--1156
+Underfull \hbox (badness 5403) in paragraph at lines 1158--1158
 []|\OT1/cmss/m/n/10.95 No ex-trac-tion if a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1156--1156
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1158
 []|\OT1/cmss/m/n/10.95 Remove sen-tences
  []
 
-[78
+[83
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1168
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
 []|\OT1/cmss/bx/it/10.95 Common Num-ber
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 1168--1168
+Underfull \hbox (badness 1383) in paragraph at lines 1170--1170
 []|\OT1/cmss/m/n/10.95 Features in-cluded to
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 1168--1168
+Underfull \hbox (badness 4072) in paragraph at lines 1170--1170
 \OT1/cmss/m/n/10.95 frac-tion), mag-ni-tude
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 1168--1168
+Underfull \hbox (badness 5374) in paragraph at lines 1170--1170
 []|\OT1/cmss/m/n/10.95 Handled by at-tach-
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 1168--1168
+Underfull \hbox (badness 3872) in paragraph at lines 1170--1170
 \OT1/cmss/m/n/10.95 mod-i-fy-ing de-pen-den-
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 1168--1168
+Underfull \hbox (badness 4328) in paragraph at lines 1170--1170
 \OT1/cmss/m/n/10.95 cies, \OT1/cmss/m/it/10.95 ur-ban \OT1/cmss/m/n/10.95 pop-u
 -la-
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 1168--1168
+Underfull \hbox (badness 2181) in paragraph at lines 1170--1170
 []|\OT1/cmss/m/n/10.95 Not han-dled in the
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 1168--1168
+Underfull \hbox (badness 1077) in paragraph at lines 1170--1170
 \OT1/cmss/m/n/10.95 model, can be han-
  []
 
-[79
+[84
 
-] (./presentation_1.bbl) [80
+] (./presentation_1.bbl) [85
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [81
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [86
 
 
 ]
@@ -1740,14 +1750,14 @@ Underfull \hbox (badness 1077) in paragraph at lines 1168--1168
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1178.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1178.
 
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: 4A5AD9C24569A238426908A953F6290A;383.
+(rerunfilecheck)             Checksum: 64B1014FF8B4FF5CF0B0F3B18A46C034;549.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1756,16 +1766,19 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1176.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1178.
  ) 
 Here is how much of TeX's memory you used:
- 20931 strings out of 493304
- 391783 string characters out of 6139872
- 483765 words of memory out of 5000000
- 23653 multiletter control sequences out of 15000+600000
+ 20960 strings out of 493304
+ 392271 string characters out of 6139872
+ 483899 words of memory out of 5000000
+ 23670 multiletter control sequences out of 15000+600000
  16424 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,15n,60p,403b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,60p,403b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texli
@@ -1777,10 +1790,10 @@ type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
 lic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb>
-Output written on presentation_1.pdf (81 pages, 1850193 bytes).
+Output written on presentation_1.pdf (86 pages, 1855654 bytes).
 PDF statistics:
- 774 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
- 179 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 819 PDF objects out of 1000 (max. 8388607)
+ 603 compressed objects within 7 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
