@@ -647,26 +647,11 @@ For each mention, $s \in S_{e,q}$
 %------------------------------------------------
 
 
-%------------------------------------------------
-\begin{frame}
-\frametitle{NumberTron}
-\framesubtitle{Features}
-\begin{itemize}
-\setlength \itemsep{2em}
-\item \textbf{Mintz Features} Lexical and Synctactic features derived from POS tags and dependency path \cite{mintz}
-\item \textbf{Keyword Features}
-Derived from a pre-specified list of keywords per relation.
-\item \textbf{Number Features} Capture Information on the magnitude, type (whole, fraction) can also be useful for relation extraction.
-\end{itemize}
-
-{\color{red}\emph{Afghanistan , which is mostly rural , has one of the lowest life expectancy rate in the world at 44 year for both man and woman}}. 
-
-\end{frame}
 
 %------------------------------------------------
 \begin{frame}
 \frametitle{NumberTron}
-\framesubtitle{Features}
+\framesubtitle{Features: Example}
 \begin{table}
 \begin{tabular}{|l|l|}
 \hline
@@ -689,17 +674,26 @@ around 1.3 billion and thus the feature Num: Billion is fired.
 
 \begin{frame}
 \frametitle{NumberTron}
+\framesubtitle{Features: Example}
+
+\begin{tabularx}{\textwidth}{b|b}
+\textit{inverse\_false$\vert$LOCATION$\vert$*LONG*$\vert$DURATION} & There is a long dependency path between the two entities, one of which is a location and other duration \\
+\end{tabularx}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
 \framesubtitle{Features}
 \begin{itemize}
-\setlength \itemsep{1em}
-\item \textit{inverse\_false$\vert$LOCATION$\vert$*LONG*$\vert$DURATION}, There is a long dependency path between the two entities, one of which is a location and other duration 
-\item \textit{inverse\_false$\vert$B\_-2 B\_-1$\vert$LOCATION$\vert$*LONG*$\vert$DURATION$\vert$year for}, Same as above, but now with windows of text around entities of interest 
-\item str:rural[rcmod]$->\vert$LOCATION$\vert$[nsubj]$->$have[root]$<-$at[prep]$<-$year[pobj]$<-\vert$DURATION , The typed dependency path 
-\item dir:$->\vert$LOCATION$\vert-><-<-<-\vert$DURATION , Direction of dependencies 
+
+\item \textbf{Mintz Features} Lexical and Synctactic features derived from POS tags and dependency path \cite{mintz}
+
+\item \textbf{Keyword Features}
+Derived from a pre-specified list of keywords per relation.
+\item \textbf{Number Features} Capture Information on the magnitude, type (whole, fraction) can also be useful for relation extraction.
+
 \end{itemize}
-
-{\color{red}\emph{Afghanistan , which is mostly rural , has one of the lowest life expectancy rate in the world at 44 year for both man and woman}}. 
-
 \end{frame}
 
 
