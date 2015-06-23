@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.4)  23 JUN 2015 22:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.4)  23 JUN 2015 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1648,102 +1648,86 @@ Overfull \vbox (12.35162pt too high) detected at line 922
 
 ] [76
 
+] [77
+
 ]
-Underfull \hbox (badness 7631) in paragraph at lines 1142--1142
+Underfull \hbox (badness 7631) in paragraph at lines 1156--1156
 []|\OT1/cmss/m/n/10.95 A Graph-i-cal Model
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 1142--1142
+Underfull \hbox (badness 1983) in paragraph at lines 1156--1156
 \OT1/cmss/m/n/10.95 with Per-cep-tron like
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 1142--1142
+Underfull \hbox (badness 5302) in paragraph at lines 1156--1156
 \OT1/cmss/m/n/10.95 words + Nu-mer-i-cal
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 1142--1142
+Underfull \hbox (badness 3536) in paragraph at lines 1156--1156
 []|\OT1/cmss/bx/it/10.95 Handling Men-tions
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 1142--1142
+Underfull \hbox (badness 5403) in paragraph at lines 1156--1156
 []|\OT1/cmss/m/n/10.95 No ex-trac-tion if a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1142--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1156
 []|\OT1/cmss/m/n/10.95 Remove sen-tences
- []
-
-[77
-
-]
-Underfull \hbox (badness 5203) in paragraph at lines 1152--1152
-[]|\OT1/cmss/m/n/10.95 Units are used for
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 1152--1152
-\OT1/cmss/m/n/10.95 and flat-ten-ing to SI
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1152
-[]|\OT1/cmss/bx/it/10.95 Common Num-ber
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 1152--1152
-[]|\OT1/cmss/m/n/10.95 Features in-cluded to
- []
-
-
-Underfull \hbox (badness 4072) in paragraph at lines 1152--1152
-\OT1/cmss/m/n/10.95 frac-tion), mag-ni-tude
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 1152--1152
-[]|\OT1/cmss/m/n/10.95 Handled by form-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1152
-\OT1/cmss/m/n/10.95 re-la-tion phrases:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1152
-\OT1/cmss/m/n/10.95 at-tach-ing key-words
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1152
-\OT1/cmss/m/n/10.95 with words re-lated
- []
-
-
-Underfull \hbox (badness 7558) in paragraph at lines 1152--1152
-\OT1/cmss/m/n/10.95 den-cies, like \OT1/cmss/m/it/10.95 ur-ban
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 1152--1152
-[]|\OT1/cmss/m/n/10.95 Not han-dled in the
- []
-
-
-Overfull \vbox (3.0628pt too high) detected at line 1152
  []
 
 [78
 
-] (./presentation_1.bbl) [79
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1168
+[]|\OT1/cmss/bx/it/10.95 Common Num-ber
+ []
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [80
+
+Underfull \hbox (badness 1383) in paragraph at lines 1168--1168
+[]|\OT1/cmss/m/n/10.95 Features in-cluded to
+ []
+
+
+Underfull \hbox (badness 4072) in paragraph at lines 1168--1168
+\OT1/cmss/m/n/10.95 frac-tion), mag-ni-tude
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 1168--1168
+[]|\OT1/cmss/m/n/10.95 Handled by at-tach-
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 1168--1168
+\OT1/cmss/m/n/10.95 mod-i-fy-ing de-pen-den-
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 1168--1168
+\OT1/cmss/m/n/10.95 cies, \OT1/cmss/m/it/10.95 ur-ban \OT1/cmss/m/n/10.95 pop-u
+-la-
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 1168--1168
+[]|\OT1/cmss/m/n/10.95 Not han-dled in the
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 1168--1168
+\OT1/cmss/m/n/10.95 model, can be han-
+ []
+
+[79
+
+] (./presentation_1.bbl) [80
+
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [81
 
 
 ]
@@ -1756,11 +1740,11 @@ Overfull \vbox (3.0628pt too high) detected at line 1152
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1160.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1160.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1176.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1176.
 
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
 (rerunfilecheck)             Checksum: 4A5AD9C24569A238426908A953F6290A;383.
@@ -1772,13 +1756,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1160.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1176.
  ) 
 Here is how much of TeX's memory you used:
- 20927 strings out of 493304
- 391746 string characters out of 6139872
+ 20931 strings out of 493304
+ 391783 string characters out of 6139872
  483765 words of memory out of 5000000
- 23651 multiletter control sequences out of 15000+600000
+ 23653 multiletter control sequences out of 15000+600000
  16424 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,15n,60p,403b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1793,10 +1777,10 @@ type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
 lic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb>
-Output written on presentation_1.pdf (80 pages, 1849119 bytes).
+Output written on presentation_1.pdf (81 pages, 1850193 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 177 named destinations out of 1000 (max. 500000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 179 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 

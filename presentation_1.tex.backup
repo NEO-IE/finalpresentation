@@ -647,11 +647,26 @@ For each mention, $s \in S_{e,q}$
 %------------------------------------------------
 
 
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Features}
+\begin{itemize}
+\setlength \itemsep{2em}
+\item \textbf{Mintz Features} Lexical and Synctactic features derived from POS tags and dependency path \cite{mintz}
+\item \textbf{Keyword Features}
+Derived from a pre-specified list of keywords per relation.
+\item \textbf{Number Features} Capture Information on the magnitude, type (whole, fraction) can also be useful for relation extraction.
+\end{itemize}
+
+{\color{red}\emph{Afghanistan , which is mostly rural , has one of the lowest life expectancy rate in the world at 44 year for both man and woman}}. 
+
+\end{frame}
 
 %------------------------------------------------
 \begin{frame}
 \frametitle{NumberTron}
-\framesubtitle{Features: Example}
+\framesubtitle{Features}
 \begin{table}
 \begin{tabular}{|l|l|}
 \hline
@@ -664,36 +679,25 @@ All Keywords & key: life	key: expect	key: world \\
 Number Features & Num: Billion	Num: Integer \\
 \hline
 \end{tabular} \end{table}
-
+  
 {\color{red}\emph{Afghanistan , which is mostly rural , has one of the lowest life expectancy rate in the world at 44 year for both man and woman}}. 
-
-The time "44 year" is converted to the SI unit, which comes out to be 
-around 1.3 billion and thus the feature Num: Billion is fired.
+\textit{The time ``44 year'' is converted to the SI unit, which comes out to be around 1.3 billion and thus the feature Num: Billion is fired.}
 
 \end{frame}
 
-\begin{frame}
-\frametitle{NumberTron}
-\framesubtitle{Features: Example}
-
-\begin{tabularx}{\textwidth}{b|b}
-\textit{inverse\_false$\vert$LOCATION$\vert$*LONG*$\vert$DURATION} & There is a long dependency path between the two entities, one of which is a location and other duration \\
-\end{tabularx}
-\end{frame}
-
-%------------------------------------------------
 \begin{frame}
 \frametitle{NumberTron}
 \framesubtitle{Features}
 \begin{itemize}
-
-\item \textbf{Mintz Features} Lexical and Synctactic features derived from POS tags and dependency path \cite{mintz}
-
-\item \textbf{Keyword Features}
-Derived from a pre-specified list of keywords per relation.
-\item \textbf{Number Features} Capture Information on the magnitude, type (whole, fraction) can also be useful for relation extraction.
-
+\setlength \itemsep{1em}
+\item \textit{inverse\_false$\vert$LOCATION$\vert$*LONG*$\vert$DURATION}, There is a long dependency path between the two entities, one of which is a location and other duration 
+\item \textit{inverse\_false$\vert$B\_-2 B\_-1$\vert$LOCATION$\vert$*LONG*$\vert$DURATION$\vert$year for}, Same as above, but now with windows of text around entities of interest 
+\item str:rural[rcmod]$->\vert$LOCATION$\vert$[nsubj]$->$have[root]$<-$at[prep]$<-$year[pobj]$<-\vert$DURATION , The typed dependency path 
+\item dir:$->\vert$LOCATION$\vert-><-<-<-\vert$DURATION , Direction of dependencies 
 \end{itemize}
+
+{\color{red}\emph{Afghanistan , which is mostly rural , has one of the lowest life expectancy rate in the world at 44 year for both man and woman}}. 
+
 \end{frame}
 
 
@@ -836,7 +840,18 @@ Derived from a pre-specified list of keywords per relation.
 \begin{frame}
 \frametitle{NumberTron}
 \framesubtitle{Extraction}
+\begin{itemize}
+ \item \textbf{Sentence Level Extractions}
+ 
+\item Given a sentence S, let $E$ be the set of entities and $Q$ be the set of numbers that are present in the sentence.  
+\item We then calculate a score$(r,e,q)$ for a $e \in E$ and $q \in Q$ for being tagged $r$ as $\theta^r_q \phi_q(n_q=1) + \theta_s \phi_s(r)$
+where $\phi_s$ captures the features in sentence $S$ tied to entity $e$ and number $q$.
+\item For each $(e,q)$ we assign a label $r$ if the min-max normalized score is greater than some threshold $\alpha$.
+\item We use a cross validation set to obtain the $\alpha$ = 0.90.
+\end{itemize}
+
 \end{frame}
+
 %------------------------------------------------
 
 \begin{frame}
@@ -1112,7 +1127,41 @@ Land Area & 57.44 & 52.22\\
 %---------------------------------------------------
 
 %---------------------------------------------------
+
 \section{Summary}
+\begin{frame}
+\begin{itemize} 
+We study of the task of numerical relation extraction, in which one of the arguments of the relation is a quantity.
+Our preliminary analysis reveals several peculiarities that make the task differently challenging from standard IE.
+We employ these insights into a rule-based system, NumberRule, that can extract any numerical relation given input keywords for that relation.
+We also develop a probabilistic graphical model, NumberTron, that employs novel task-specific features and can be trained via distant supervision or other heuristic labelings. 
+
+By aggregating evidence from multiple features, NumberTron produces much higher recall at comparable precision compared to NumberRule. 
+Both systems vastly outperform baselines and non-numeric IE systems, with NumberTron yielding over 20 point F-score improvement.
+\end{frame}
+
+\begin{frame}
+\frametitle{Summary}
+\begin{tabularx}{\textwidth}{|b |b |b |}
+\hline
+  & \textbf{NumberRule} &  \textbf{NumberTron}\\ \hline
+ \textbf{Idea} & Use dep path between the number and the entity in the mention& A Graphical Model with Perceptron like training algorithm\\ \hline
+ \textbf{Supervision}& Relation specific keywords. & Relation specific keywords + Numerical knowledge base. \\ \hline
+ \textbf{Handling False +ves}&  Look for relation specific keywords in the dep path.&  Keyword features. \\ \hline
+\textbf{Handling Mentions Expressing Change}& No extraction if a delta word exists on the dep path. &  Remove sentences having delta words on the dep path\\ \hline 
+
+ \end{tabularx}
+\end{frame}
+
+\begin{frame}
+\frametitle{Summary}
+\begin{tabularx}{\textwidth}{|b |b |b |}
+ \textbf{Use of Unit Tagger} & Units are used to test compatibility of a relation and the number.& Units are used for training data creation and flattening to SI units.\\ \hline
+ \textbf{Common Number Pruning} & N/A & Features included to capture type (whole, fraction), magnitude and frequency. \\ \hline
+ \textbf{Modified Relations} & Handled by forming relation phrases: attaching keywords with words related via modifying dependencies, like \emph{urban} population.& Not handled in the model, can be handled at the time of extraction using a scheme similar to the one used by NumerRule. \\ \hline
+  \textbf{Results} & P = 59.30, R = 53.60, F-Score = 56.30& P = 60.93, R = 66.92, F-Score = 63.78\\ \hline
+\end{tabularx}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 \begin{frame}[allowframebreaks]
