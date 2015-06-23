@@ -74,6 +74,8 @@
 \usepackage{multirow}
 \usepackage{adjustbox}
 \usepackage{tabularx}
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
 
 % tikzmark command, for shading over items
 \newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
@@ -563,6 +565,28 @@ system will yield the wrong extraction \textbf{ POP(India, 23 million)}, instead
 
 \end{frame}
 
+\begin{frame}
+\begin{table}
+\begin{tabularx}{\textwidth}{b|s}
+\hline
+{\bf Sentence} & {\bf Test} \\
+\hline
+{\em The estimated population of Australia is about 36.25 million people. } & - \\
+\hline
+{\em The estimated population density of Australia is 36.25 million people {\bf per sq km.}} & Incompatible Units \\
+\hline
+{\em The estimated population of Australia {\bf increased} by about 36.25 million people. } & Delta Word Present \\
+\hline
+{\em The estimated population of {\bf urban} Australia is about 36.25 million people. } & Entity is Modified \\
+\hline
+{\em The estimated {\bf adolescent} population of  Australia is about 36.25 million. } & Entity is Modified \\
+\hline
+{\em The estimated populations in 2014 are Australia,  {\bf 100 million} and New Zealand, 36.25 million.} & 100 million is closest to Australia\\
+\hline
+\end{tabularx}
+\caption{\label{fig:nr-eg} NumberRule outputs (Australia, Total Population, 36.25 million) only in the first sentence. The second column is test number that fails for other sentences. The input keyword is ``population''.}
+\end{table}
+\end{frame}
 %------------------------------------------------
 
 %Introduce graphical models here, tricky!
