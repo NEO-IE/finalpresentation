@@ -85,6 +85,17 @@
 \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage[english]{babel}
@@ -581,22 +592,13 @@ $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{ns
 \end{frame}
 %------------------------------------------------
 
+\section{NumberTron: Probabilistic Relation Extraction}
+\part{NumberTron: Probabilistic Relation Extraction}
 %Introduce graphical models here, tricky!
 \newcommand{\vz}{{\mathbf z}}
 \newcommand{\vn}{{\mathbf n}}
 \newcommand{\cR}{{\cal R}}
 
-%------------------------------------------------
-\begin{frame}
-\frametitle{Probabilistic Graphical Models}
-\framesubtitle{In a Nutshell}
-\end{frame}
-
-%------------------------------------------------
-\begin{frame}
-\frametitle{Probabilistic Graphical Models}
-\framesubtitle{In a Nutshell}
-\end{frame}
 
 %------------------------------------------------
 \begin{frame}
@@ -623,6 +625,10 @@ unit variants like "mile", "km" to a canonical SI unit, "meter".}
 \end{frame}
 
 %------------------------------------------------
+
+%------------------------------------------------
+
+
 \begin{frame}
 \frametitle{NumberTron}
 \framesubtitle{Random Variables}
@@ -1130,18 +1136,20 @@ Land Area & 57.44 & 52.22\\
 
 \section{Summary}
 \begin{frame}
+\frametitle{Summary}
 \begin{itemize} 
-We study of the task of numerical relation extraction, in which one of the arguments of the relation is a quantity.
-Our preliminary analysis reveals several peculiarities that make the task differently challenging from standard IE.
-We employ these insights into a rule-based system, NumberRule, that can extract any numerical relation given input keywords for that relation.
-We also develop a probabilistic graphical model, NumberTron, that employs novel task-specific features and can be trained via distant supervision or other heuristic labelings. 
-
-By aggregating evidence from multiple features, NumberTron produces much higher recall at comparable precision compared to NumberRule. 
-Both systems vastly outperform baselines and non-numeric IE systems, with NumberTron yielding over 20 point F-score improvement.
+\item  Numerical relation extraction has several peculiarities, more challenging than standard IE.
+\item \textbf{NumberRule}, a rule based system that can extract any numerical relation given input keywords for that relation.
+\item \textbf{NumberTron}, a probabilistic graphical model, that employs novel task-specific features and can be trained via distant supervision or other heuristic labelings. 
+\item NumberTron aggregates evidence from multiple features and produces higher recall at a precision comparable to NumberRule. 
+\item Both systems vastly outperform baselines and non-numeric IE systems, with NumberTron yielding over 33 point F-score improvement.
+\end{itemize}
+    
 \end{frame}
 
 \begin{frame}
 \frametitle{Summary}
+\framesubtitle{NumberTron vs NumberRule}
 \begin{tabularx}{\textwidth}{|b |b |b |}
 \hline
   & \textbf{NumberRule} &  \textbf{NumberTron}\\ \hline
@@ -1155,10 +1163,12 @@ Both systems vastly outperform baselines and non-numeric IE systems, with Number
 
 \begin{frame}
 \frametitle{Summary}
+\framesubtitle{NumberTron vs NumberRule}
 \begin{tabularx}{\textwidth}{|b |b |b |}
- \textbf{Use of Unit Tagger} & Units are used to test compatibility of a relation and the number.& Units are used for training data creation and flattening to SI units.\\ \hline
+\hline
+\textbf{Use of Unit Tagger} & Used to test compatibility of a relation and the number.& Used for training data creation and flattening to SI units.\\ \hline
  \textbf{Common Number Pruning} & N/A & Features included to capture type (whole, fraction), magnitude and frequency. \\ \hline
- \textbf{Modified Relations} & Handled by forming relation phrases: attaching keywords with words related via modifying dependencies, like \emph{urban} population.& Not handled in the model, can be handled at the time of extraction using a scheme similar to the one used by NumerRule. \\ \hline
+ \textbf{Modified Relations} & Handled by attaching words related via modifying dependencies, \emph{urban} population.& Not handled in the model, can be handled at the time of extraction using a similar scheme. \\ \hline
   \textbf{Results} & P = 59.30, R = 53.60, F-Score = 56.30& P = 60.93, R = 66.92, F-Score = 63.78\\ \hline
 \end{tabularx}
 \end{frame}
