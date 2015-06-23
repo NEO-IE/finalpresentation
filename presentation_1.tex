@@ -1128,6 +1128,28 @@ Land Area & 57.44 & 52.22\\
 
 %---------------------------------------------------
 \section{Summary}
+\begin{frame}
+\frametitle{Summary}
+\begin{tabularx}{\textwidth}{|b |b |b |}
+\hline
+  & \textbf{NumberRule} &  \textbf{NumberTron}\\ \hline
+ \textbf{Idea} & Use dep path between the number and the entity in the mention& A Graphical Model with Perceptron like training algorithm\\ \hline
+ \textbf{Supervision}& Relation specific keywords. & Relation specific keywords + Numerical knowledge base. \\ \hline
+ \textbf{Handling False +ves}&  Look for relation specific keywords in the dep path.&  Keyword features. \\ \hline
+\textbf{Handling Mentions Expressing Change}& No extraction if a delta word exists on the dep path. &  Remove sentences having delta words on the dep path\\ \hline 
+
+ \end{tabularx}
+\end{frame}
+
+\begin{frame}
+\frametitle{Summary}
+\begin{tabularx}{\textwidth}{|b |b |b |}
+ \textbf{Use of Unit Tagger} & Units are used to test compatibility of a relation and the number.& Units are used for training data creation and flattening to SI units.\\ \hline
+ \textbf{Common Number Pruning} & N/A & Features included to capture type (whole, fraction), magnitude and frequency. \\ \hline
+ \textbf{Modified Relations} & Handled by forming relation phrases: attaching keywords with words related via modifying dependencies, like \emph{urban} population.& Not handled in the model, can be handled at the time of extraction using a scheme similar to the one used by NumerRule. \\ \hline
+  \textbf{Results} & P = 59.30, R = 53.60, F-Score = 56.30& P = 60.93, R = 66.92, F-Score = 63.78\\ \hline
+\end{tabularx}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 \begin{frame}[allowframebreaks]
