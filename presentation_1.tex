@@ -711,24 +711,13 @@ Electricity Production & electricity\\
 For an entity $e$ (India)
 \begin{itemize}
 \setlength \itemsep{1em}
+ \item One Graph \textbf{per entity}
  \item Let $S_e$ be the set of sentences that express the entity $e$.
  \item Let $Q_e$ denote the distinct numbers with unit that appear in $S_e$ \footnote{We use the unit tagger by \cite{sarawagi2014} to identity units of numbers in the text and to convert all
 unit variants like "mile", "km" to a canonical SI unit, "meter".}
 \item $\forall q \in Q_e$, let $S_{e,q} \subseteq S_e$ denote the sentences that mention $e$ and $q$. 
 \end{itemize}
 \end{frame}
-
-%---------------------------------------------------
-\begin{frame}
- \frametitle{NumberTron}
-\framesubtitle{Graphical Model}
-\begin{figure}
-\includegraphics[width=0.7\textwidth]{images/numbertronmodel.eps}
-\end{figure}
-
-\end{frame}
-
-%------------------------------------------------
 
 %------------------------------------------------
 \begin{frame}
@@ -745,6 +734,23 @@ For  $e =$ (China)
 \end{itemize}
 \end{frame}
 
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Random Variables}
+For each entity $e$, for each number $n_q$
+\begin{itemize}
+\item \textbf{$n_r^q$, number nodes} Binary, 1 if the number $q$ is related to $e$ via relation $r$. 
+\end{itemize}
+\vspace{3em}
+For each mention, $s \in S_{e,q}$
+\begin{itemize}
+\item \textbf{$z_s$, mention nodes} multi-ary, can take values $r \in \cR = (R\, \cup \perp)$, set to $r \in R$ if the sentence expresses any of the $R$ relations, else set to $z_s = \perp$.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
 \begin{frame}
 \begin{columns}[T] % align columns
 \begin{column}{.30\textwidth}
@@ -756,7 +762,6 @@ For  $e =$ (China)
 \item $S_{china, 4.3 \%} = \{(i), (ii)\}$ 
 \item $S_{china, 840000000} = \{(iii)\}$ 
 \end{itemize}
-
 \end{column}%
 
 \hfill%
@@ -765,28 +770,21 @@ For  $e =$ (China)
 \begin{figure}
 \includegraphics[width=0.7\textwidth]{images/numbertronmodel.eps}
 \end{figure}
-
 \end{column}%
-
 \end{columns}
 \end{frame}
 
 
+%---------------------------------------------------
 \begin{frame}
-\frametitle{NumberTron}
-\framesubtitle{Random Variables}
-For each entity $e$, for each number $n_q$
-\begin{itemize}
-\item \textbf{$n_r^q$, number nodes} Binary, 1 if the number $q$ is related to $e$ via relation $r$. 
-\end{itemize}
-\vspace{3em}
-For each mention, $s \in S_{e,q}$
-\begin{itemize}
+ \frametitle{NumberTron}
+\framesubtitle{Graphical Model}
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/numbertronmodel.eps}
+\end{figure}
 
-\item \textbf{$z_s$, mention nodes} multi-ary, can take values $r \in \cR = (R\, \cup \perp)$, set to $r \in R$ if the sentence expresses any of the $R$ relations, else set to $z_s = \perp$.
-\end{itemize}
 \end{frame}
-%------------------------------------------------
+
 
 
 %------------------------------------------------
@@ -1299,6 +1297,14 @@ Land Area & 60.37 & 52.22\\
     
 \end{frame}
 
+\section{Thanks!}
+%----------------------------------------------------------------------------------------
+\begin{frame}[allowframebreaks]
+        \frametitle{References}
+        \bibliographystyle{amsalpha}
+        \bibliography{numrel.bib}
+\end{frame}
+
 \begin{frame}
 \frametitle{Summary}
 \framesubtitle{NumberTron vs NumberRule}
@@ -1314,8 +1320,7 @@ Land Area & 60.37 & 52.22\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Summary}
-\framesubtitle{NumberTron vs NumberRule}
+\frametitle{NumberTron vs NumberRule}
 \begin{tabularx}{\textwidth}{|b |b |b |}
 \hline
 \textbf{Use of Unit Tagger} & Used to test compatibility of a relation and the number.& Used for training data creation and flattening to SI units.\\ \hline
@@ -1325,10 +1330,4 @@ Land Area & 60.37 & 52.22\\
 \end{tabularx}
 \end{frame}
 
-%----------------------------------------------------------------------------------------
-\begin{frame}[allowframebreaks]
-        \frametitle{References}
-        \bibliographystyle{amsalpha}
-        \bibliography{numrel.bib}
-\end{frame}
 \end{document}

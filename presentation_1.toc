@@ -7,3 +7,4 @@
 \beamer@sectionintoc {6}{NumberTron: Probabilistic Relation Extraction}{51}{0}{5}
 \beamer@sectionintoc {7}{Results}{73}{1}{6}
 \beamer@sectionintoc {8}{Summary}{84}{1}{7}
+\beamer@sectionintoc {9}{Thanks!}{88}{1}{8}
