@@ -353,9 +353,27 @@ to a number \\~\\
  \begin{itemize}
   \item Large Corpus ($\sim$16 million sentences), hand labeling is out of question \pause \\~\\
   \item Need lots of training data to learn high quality extractors \pause \\~\\
-  \item Is there a middle ground?
+  \item What makes this problem interesting?
  \end{itemize}
 \end{frame}
+
+%---------------------------------
+
+\begin{frame}{Related Work}
+ \begin{itemize}
+ \setlength \itemsep{2em}
+  \item Mintz et. el [2009], were the first ones to use distant supervision for relation extraction from the text.
+  \item Traditional IE deals with relations having both the arguments that are entities (e.g, Microsoft, Bill Gates).
+  \item Riedel et. al[2010] were the first ones to use graphical model for relation extraction.
+  \item Later systems MultiR (Hoffman et. al[2011]) improved upon the graphical model by improving upon the distant supervision assumption.
+  
+ \end{itemize}
+\end{frame}
+
+%------------------------
+
+
+
 % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \section{Peculiarities of Numerical Relation Extraction}
@@ -479,6 +497,28 @@ Number & Frequency (Avg. 57.84)\\ \hline
 %------------------------------------------------
 
 \begin{frame}
+ \frametitle{NumberRule}
+ \framesubtitle{Dependencies in NLP}
+ \begin{itemize}
+  \setlength \itemsep{2em}
+  \item Dependencies are grammatical relation between two words, governor and dependent.
+  \item The relation captures the way in which one of the words is affected by the other.
+  \item For example, consider the sentence: \emph{``The red ball was lost''}
+    \begin{itemize}
+    \setlength \itemsep{1em}
+      \item \textbf{amod(ball,3,red,2)} ``Red'' is an adjective for ``ball''
+      \item \textbf{det(ball,3,The,1)}  ``the'' is a determiner of ``ball''
+      \item \textbf{nsubjpass(lost,5,ball,3)}	``ball is the subject of lost''
+      \item \textbf{auxpass(lost,5,was,4)}	``was is an auxiliary of lost''
+    \end{itemize}
+ \end{itemize}
+ 
+\end{frame}
+
+
+
+%---------------------------------
+\begin{frame}
 \frametitle{NumberRule}
 \framesubtitle{Motivation}
 
@@ -525,37 +565,40 @@ If \textbf{$e_1$ and $e_2$ }are two entities mentioned in the same
 
 \end{frame}
 
-
 %------------------------------------------------
 \begin{frame}[allowframebreaks]
 \frametitle{NumberRule}
 \framesubtitle{Extraction Algorithm}
-\begin{algorithmic}[1]
-\State Given a sentence S, let $E_S$ be the set of entities and $N_S$ be the set of numbers that are present in the sentence.
-\State Let $R$ be the set of relations
-\State Let $LegalUnits(r)$ be the set of possible units for a relation $r$ in $R$ 
-\State Let $Unit(n)$ be the unit for a given number $n$ as returned by the unit tagger. 
-\State Let $K$ be the set of keywords 
-\State Let $\Delta$ be the set of delta words
-\For{$(e, n) \in (E_S \times N_S)$} //For all entity-number pairs
+	\begin{algorithmic}[1]
 
-\State $P \gets$ the set of words in the dependency path between $e$ and $n$
-\For{$r \in R$}
-\If{$P \cap K_r = \emptyset$} //keyword is not present
-\State continue;
-\EndIf
-\item[]
-\If{$P \cap \Delta \not = \emptyset$} //delta words are present
-\State continue;
-\EndIf
-\If{$Unit(n) \not \in LegalUnits(r)$} //incompatible units?
-\State continue;
+	\For{$(e, n) \in (E_S \times N_S)$} //For all entity-number pairs
+
+ \State $P \gets$ words in dependency path between $e$ and $n$
+ \For{$r \in R$}
+ \If{$P \cap K_r = \emptyset$}
+ \State continue;\ //keyword is not present
+ \EndIf
+
+ \If{$P \cap \Delta \not = \emptyset$} 
+ \State continue;\ //delta words are present
+ \EndIf
+
+ \If{$Unit(n) \not \in LegalUnits(r)$} 
+ \State continue;\ //incompatible units?
+ \EndIf
+
+\If{ $k_{r} \in P \cap K_{r}$ is modified/scoped}
+\State continue; \ //keyword is modified/scoped
 \EndIf
 
-\State Extract $r(e', r', n)$, where e' and r' are the augmented entity and relation phrases.
-\EndFor
-\EndFor
-\end{algorithmic}
+\If {e is modified/scoped}
+\State continue; \ //entity is modified/scoped
+\EndIf
+
+ \State Extract $r(e, r, n)$.
+ \EndFor
+ \EndFor
+ \end{algorithmic}
 \end{frame}
 
 
@@ -1186,25 +1229,25 @@ Mintz + Keyword + Number & \emph{60.93} & \emph{66.92} & \emph{63.78}\\
 Relation & NumberTron F1 & NumberRule F1\\
 \hline
 \hline
-FDI & 0 & 50.00\\
+FDI & 32.00 & 50.00\\
 \hline
-Life Expectancy & 68.96 & 69.50\\
+Life Expectancy & 76.19 & 69.50\\
 \hline
-Internet Users & 55.73 & 54.54\\
+Internet Users & 58.62 & 54.54\\
 \hline
-Electricity Prod. & 50.00 & 62.50\\
+Electricity Prod. & 16.67 & 62.50\\
 \hline
-GDP & 57.14 & 42.80\\
+GDP & 70.00 & 42.80\\
 \hline
-$CO_{2}$ Emissions & 47.61 & 53.30\\
+$CO_{2}$ Emissions & 30.76 & 53.30\\
 \hline
-Inflation & 88.40 & 56.25\\
+  Inflation & 85.71 & 56.25\\
 \hline
-Goods export & 75.00 & 35.20\\
+Goods export & 71.42 & 35.20\\
 \hline
-Population & 49.99 & 60.30\\
+Population & 39.50 & 60.30\\
 \hline
-Land Area & 57.44 & 52.22\\
+Land Area & 60.37 & 52.22\\
 \hline
 \end{tabular}
 %\end{adjustbox}
@@ -1220,8 +1263,9 @@ Land Area & 57.44 & 52.22\\
 \framesubtitle{per relation analysis of NumberTron vs NumberRule}
 \begin{itemize}
 \setlength\itemsep{1em}
-\item For FDI relation, NumberTron does not make a extraction because in our corpus sentence expressing the relation are rare.
+\item For relations like FDI, Electricity production, and $CO_2$ emissions, NumberTron performs poorly because of the lack of the training data in the corpus.
 \item Inflation and Population are well represented in training corpus and hence higher recall.
+
 \end{itemize}
 \end{frame}
 %---------------------------------------------------

@@ -356,8 +356,6 @@ to a number \\~\\
   \item Is there a middle ground?
  \end{itemize}
 \end{frame}
----------------------------------
-
 % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \section{Peculiarities of Numerical Relation Extraction}
@@ -400,12 +398,13 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \frametitle{Peculiarities of Numerical Relation Extraction}
 \framesubtitle{Units}
 \begin{itemize}
+\setlength \itemsep{1em}
 \item Unit acts as types for numbers.
 \item Same quantity may be expressed with different unit
 	\begin{itemize}
     	\item 20 kms or 12.4 miles
    	\end{itemize}
-\item Unit extractor needs to perform unit conversions for effective matching and extraction
+\item Unit extractor needs to perform unit conversions for correct matching and extraction
 \end{itemize}
 \end{frame}
 
@@ -414,10 +413,12 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \framesubtitle{Delta Words}
 
 \begin{itemize}
-\item Often sentences express the change in the value of a relation instead of, or in addition to, the actual value itself.
+\setlength \itemsep{1em}
+\item Not uncommon to find sentences expressing change in the value of a relation (instead of, or in addition to, the actual value).
 \begin{itemize}
-\item Amazon stock price increased by \$35 to close at \$510.
-\item India's tiger population sees 30\% increase.
+\setlength \itemsep{1em}
+\item Amazon stock price \textit{\color{red}increased by} \$35 to close at \$510.
+\item India's tiger population sees 30\% \textit{\color{red}increase}.
 \item Ford poised to raise dividend by 20\% even as profit declines.
 \end{itemize}
 \end{itemize}
@@ -428,11 +429,14 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \framesubtitle{Relation/Argument Scoping}
 
 \begin{itemize}
+\setlength \itemsep{1em}
 \item Additional modifiers to arguments or relation words may subtly change the meaning and confuse the extractor.
 \begin{itemize}
+\setlength \itemsep{1em}
 \item \emph{rural} literacy rate of India
 \item literacy rate of \emph{rural} India
 \end{itemize}
+\item The modifiers are usually adjectival modifiers
 \end{itemize}
 
 \end{frame}
@@ -442,9 +446,16 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \framesubtitle{Keywords}
 
 \begin{itemize}
-\item Many numerical relations are described using one or a handful of keywords.
+\setlength \itemsep{1em}
+\item Sentences expressing many numerical relations usually include one or a handful of keywords.
+\item Sentences expressing the GDP of a country with mentioning the term \textit{GDP}? Sentences expressing inflation without mentioning inflation?
+\item \textit{Founder of} without the phrase \textit{founder of}?
 \begin{itemize}
-\item For example, sentences expressing \emph{inflation rate}, \emph{GDP}, \emph{life expectancy} would often use these keywords.
+\item Bill Gates is the founder of Microsoft
+\item Bill Gates founded Microsoft
+\item Bill Gates is the father of Microsoft
+\item Bill Gates laid the foundation stone of Microsoft
+\item Bill Gates started Microsoft
 \end{itemize}
 \end{itemize}
 
@@ -599,6 +610,14 @@ $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{ns
 \newcommand{\vn}{{\mathbf n}}
 \newcommand{\cR}{{\cal R}}
 
+\begin{frame}
+\frametitle{NumberTron}
+\begin{itemize}
+ \item An Unlabeled Corpus (Sentencified, pruned to retain sentences having a country and a number)
+ 
+\end{itemize}
+ 
+\end{frame}
 
 %------------------------------------------------
 \begin{frame}
@@ -633,11 +652,38 @@ unit variants like "mile", "km" to a canonical SI unit, "meter".}
 For  $e =$ (China)
 \begin{itemize}
 \setlength \itemsep{1em}
- \item $S_e = $  
- \{\textit{\color{blue}.. China says that annual inflation...to 4.3 percent, ...China would initiate ... that its inflation rate ... 4.3 percent in October, ...the number of chinese internet users has grown to 840 million...}\}
- \item Let $Q_e$ denote the distinct numbers with unit that appear in $S_e$ \footnote{We use the unit tagger by \cite{sarawagi2014} to identity units of numbers in the text and to convert all unit variants like "mile", "km" to a canonical SI unit, "meter".}
-\item $\forall q \in Q_e$, let $S_{e,q} \subseteq S_e$ denote the sentences that mention $e$ and $q$. 
+ \item $S_{china} = $  
+ \{\textit{\color{blue}(i).. China says that annual inflation...to 4.3 percent, (ii)...China would initiate ... that its inflation rate ... 4.3 percent in October, (iii)...the number of chinese internet users has grown to 840 million...}\}
+ \item $Q_{china} = $ \{4.3 percent, 840000000\}
+\item $S_{china, 4.3 percent} = \{(i), (ii)\}$ 
+\item $S_{china, 840000000} = \{(iii)\}$ 
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{columns}[T] % align columns
+\begin{column}{.30\textwidth}
+For  $e =$ (China)
+\begin{itemize}
+\setlength \itemsep{1em}
+\item $S_{china} = \{(i), (ii), (iii)\}$  
+\item $Q_{china} = $ \{4.3 \%, 840000000\}
+\item $S_{china, 4.3 \%} = \{(i), (ii)\}$ 
+\item $S_{china, 840000000} = \{(iii)\}$ 
+\end{itemize}
+
+\end{column}%
+
+\hfill%
+
+\begin{column}{.68\textwidth}
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/numbertronmodel.eps}
+\end{figure}
+
+\end{column}%
+
+\end{columns}
 \end{frame}
 
 
@@ -654,13 +700,6 @@ For each mention, $s \in S_{e,q}$
 
 \item \textbf{$z_s$, mention nodes} multi-ary, can take values $r \in \cR = (R\, \cup \perp)$, set to $r \in R$ if the sentence expresses any of the $R$ relations, else set to $z_s = \perp$.
 \end{itemize}
-\end{frame}
-%------------------------------------------------
-
-%------------------------------------------------
-\begin{frame}
-\frametitle{NumberTron}
-\framesubtitle{Potentials}
 \end{frame}
 %------------------------------------------------
 
@@ -872,6 +911,7 @@ where $\phi_s$ captures the features in sentence $S$ tied to entity $e$ and numb
 
 %------------------------------------------------
 
+\section{Results}
 \begin{frame}
 \frametitle{Experiments}
 \framesubtitle{Training Corpus}
