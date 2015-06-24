@@ -4,6 +4,6 @@
 \beamer@sectionintoc {3}{Relation Extraction as a Machine Learning Problem}{23}{0}{2}
 \beamer@sectionintoc {4}{Peculiarities of Numerical Relation Extraction}{35}{0}{3}
 \beamer@sectionintoc {5}{NumberRule: Rule Based Relation Extraction}{42}{0}{4}
-\beamer@sectionintoc {6}{NumberTron: Probabilistic Relation Extraction}{52}{0}{5}
-\beamer@sectionintoc {7}{Results}{74}{1}{6}
-\beamer@sectionintoc {8}{Summary}{85}{1}{7}
+\beamer@sectionintoc {6}{NumberTron: Probabilistic Relation Extraction}{51}{0}{5}
+\beamer@sectionintoc {7}{Results}{73}{1}{6}
+\beamer@sectionintoc {8}{Summary}{84}{1}{7}

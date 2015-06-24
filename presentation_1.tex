@@ -559,13 +559,12 @@ If \textbf{$e_1$ and $e_2$ }are two entities mentioned in the same
 \end{frame}
 
 %------------------------------------------------
-\begin{frame}[allowframebreaks]
+\begin{frame}[shrink=20]
 \frametitle{NumberRule}
 \framesubtitle{Extraction Algorithm}
 	\begin{algorithmic}[1]
 
 	\For{$(e, n) \in (E_S \times N_S)$} //For all entity-number pairs
-
  \State $P \gets$ words in dependency path between $e$ and $n$
  \For{$r \in R$}
  \If{$P \cap K_r = \emptyset$}
@@ -587,7 +586,6 @@ If \textbf{$e_1$ and $e_2$ }are two entities mentioned in the same
 \If {e is modified/scoped}
 \State continue; \ //entity is modified/scoped
 \EndIf
-
  \State Extract $r(e, r, n)$.
  \EndFor
  \EndFor
