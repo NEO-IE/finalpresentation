@@ -246,12 +246,13 @@
 
 
 
-\section*{Problem Statement}
-\begin{frame}{Problem Statement}
- \begin{itemize}
-  \item Given that we know a lot of facts about some entities, can we train extractors that run over the web and pull similar facts about other entities?
- \end{itemize}
-\end{frame}
+% \section*{Problem Statement}
+% \begin{frame}{Problem Statement}
+%  \begin{itemize}
+%   \item Given that we know a lot of facts about some entities, can we train extractors that run over the web and pull similar facts about other entities?
+%  \end{itemize}
+% \end{frame}
+
 \begin{frame}{Problem Statement}
 
 \begin{itemize}
@@ -552,11 +553,10 @@ If \textbf{$e_1$ and $e_2$ }are two entities mentioned in the same
 \framesubtitle{Definitions}
 \begin{itemize}
 \setlength\itemsep{\ntronitemsep}
-
  \item \textbf{Keywords}  Words that might help in identifying relations.(\textit{GDP}, \textit{internet}, \textit{inflation})
  \item \textbf{Delta words} Words that indicate that the mention expresses a change, and not the actual relation. \\ (\textit{change}, \textit{up}, \textit{down}, \textit{increased}, \textit{changed}, \textit{risen})
   \item \textbf{Modifiers} A word $m$ is said to be a modifier of the word $w$ if there is a modifying dependency from $m$ to $w$.\\ (\textit{blue} modifies \textit{whale} in \emph{\textbf{blue} whale}, \emph{\textbf{urban} population}).
-  \item \textbf{Augmented Phrase} For a word $W$, the \emph{Augmented Phrase} $W'$ is formed by concatenating $W$ with words $P$ such that $W$ and $P$ are related via a \emph{modifying dependency}. \\(for the word \textit{whale}, \textbf{\textit{blue whale}} is the augmented phrase)
+%   \item \textbf{Augmented Phrase} For a word $W$, the \emph{Augmented Phrase} $W'$ is formed by concatenating $W$ with words $P$ such that $W$ and $P$ are related via a \emph{modifying dependency}. \\(for the word \textit{whale}, \textbf{\textit{blue whale}} is the augmented phrase)
 \end{itemize}
 
 \end{frame}
@@ -630,9 +630,7 @@ $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{ns
 \hline
 {\em The estimated population of {\bf urban} Australia is about 36.25 million people. } & Entity is Modified \\
 \hline
-{\em The estimated {\bf adolescent} population of  Australia is about 36.25 million. } & Entity is Modified \\
-\hline
-{\em The estimated populations in 2014 are Australia,  {\bf 100 million} and New Zealand, 36.25 million.} & 100 million is closest to Australia\\
+{\em The estimated {\bf adolescent} population of  Australia is about 36.25 million. } & Keyword is Modified \\
 \hline
 \end{tabularx}
 \caption{\label{fig:nr-eg} NumberRule outputs (Australia, Total Population, 36.25 million) only in the first sentence. The second column is test number that fails for other sentences. The input keyword is ``population''.}
