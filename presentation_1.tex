@@ -385,7 +385,7 @@ to a number \\~\\
 
 \begin{center}
 \begin{tabular}{l|l}
-Number & Frequency\\ \hline
+Number & Frequency (Avg. 57.84)\\ \hline
 3 & 85333\\
 20 & 86359\\
 2 & 91608\\
@@ -400,6 +400,7 @@ Number & Frequency\\ \hline
 \frametitle{Peculiarities of Numerical Relation Extraction}
 \framesubtitle{Units}
 \begin{itemize}
+\setlength \itemsep{1em}
 \item Unit acts as types for numbers.
 \item Same quantity may be expressed with different unit
 	\begin{itemize}
@@ -414,10 +415,12 @@ Number & Frequency\\ \hline
 \framesubtitle{Delta Words}
 
 \begin{itemize}
-\item Often sentences express the change in the value of a relation instead of, or in addition to, the actual value itself.
+\setlength \itemsep{1em}
+\item Not uncommon to find sentences expressing change in the value of a relation (instead of, or in addition to, the actual value).
 \begin{itemize}
-\item Amazon stock price increased by \$35 to close at \$510.
-\item India's tiger population sees 30\% increase.
+\setlength \itemsep{1em}
+\item Amazon stock price \textit{\color{red}increased by} \$35 to close at \$510.
+\item India's tiger population sees 30\% \textit{\color{red}increase}.
 \item Ford poised to raise dividend by 20\% even as profit declines.
 \end{itemize}
 \end{itemize}
@@ -428,11 +431,14 @@ Number & Frequency\\ \hline
 \framesubtitle{Relation/Argument Scoping}
 
 \begin{itemize}
+\setlength \itemsep{1em}
 \item Additional modifiers to arguments or relation words may subtly change the meaning and confuse the extractor.
 \begin{itemize}
+\setlength \itemsep{1em}
 \item \emph{rural} literacy rate of India
 \item literacy rate of \emph{rural} India
 \end{itemize}
+
 \end{itemize}
 
 \end{frame}
@@ -630,14 +636,41 @@ unit variants like "mile", "km" to a canonical SI unit, "meter".}
 \begin{frame}
 \frametitle{NumberTron}
 \framesubtitle{Definitions}
-For  $e \eq$ (China)
+For  $e =$ (China)
 \begin{itemize}
 \setlength \itemsep{1em}
- \item $S_e \eq $ (the set of sentences that express the entity) $e$. 
- \{\textit{\color{blue}.. China says that annual inflation...to 4.3 percent, ...China would initiate ... that its inflation rate ... 4.3 percent in October, ...the number of chinese internet users has grown to 840 million...}\}
- \item Let $Q_e$ denote the distinct numbers with unit that appear in $S_e$ \footnote{We use the unit tagger by \cite{sarawagi2014} to identity units of numbers in the text and to convert all unit variants like "mile", "km" to a canonical SI unit, "meter".}
-\item $\forall q \in Q_e$, let $S_{e,q} \subseteq S_e$ denote the sentences that mention $e$ and $q$. 
+ \item $S_{china} = $  
+ \{\textit{\color{blue}(i).. China says that annual inflation...to 4.3 percent, (ii)...China would initiate ... that its inflation rate ... 4.3 percent in October, (iii)...the number of chinese internet users has grown to 840 million...}\}
+ \item $Q_{china} = $ \{4.3 percent, 840000000\}
+\item $S_{china, 4.3 percent} = \{(i), (ii)\}$ 
+\item $S_{china, 840000000} = \{(iii)\}$ 
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{columns}[T] % align columns
+\begin{column}{.30\textwidth}
+For  $e =$ (China)
+\begin{itemize}
+\setlength \itemsep{1em}
+\item $S_{china} = \{(i), (ii), (iii)\}$  
+\item $Q_{china} = $ \{4.3 \%, 840000000\}
+\item $S_{china, 4.3 \%} = \{(i), (ii)\}$ 
+\item $S_{china, 840000000} = \{(iii)\}$ 
+\end{itemize}
+
+\end{column}%
+
+\hfill%
+
+\begin{column}{.68\textwidth}
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/numbertronmodel.eps}
+\end{figure}
+
+\end{column}%
+
+\end{columns}
 \end{frame}
 
 
@@ -654,13 +687,6 @@ For each mention, $s \in S_{e,q}$
 
 \item \textbf{$z_s$, mention nodes} multi-ary, can take values $r \in \cR = (R\, \cup \perp)$, set to $r \in R$ if the sentence expresses any of the $R$ relations, else set to $z_s = \perp$.
 \end{itemize}
-\end{frame}
-%------------------------------------------------
-
-%------------------------------------------------
-\begin{frame}
-\frametitle{NumberTron}
-\framesubtitle{Potentials}
 \end{frame}
 %------------------------------------------------
 
@@ -872,6 +898,7 @@ where $\phi_s$ captures the features in sentence $S$ tied to entity $e$ and numb
 
 %------------------------------------------------
 
+\section{Results}
 \begin{frame}
 \frametitle{Experiments}
 \framesubtitle{Training Corpus}
