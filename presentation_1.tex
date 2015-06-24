@@ -1241,21 +1241,30 @@ Mintz + Keyword + Number & \emph{60.93} & \emph{66.92} & \emph{63.78}\\
 
 \end{frame}
 %---------------------------------------------------
-\begin{frame}
-\frametitle{Analysis}
-\framesubtitle{per relation analysis of NumberTron vs NumberRule}
-\begin{itemize}
-\setlength\itemsep{1em}
-\item For relations like FDI, Electricity production, and $CO_2$ emissions, NumberTron performs poorly because of the lack of the training data in the corpus.
-\item Inflation and Population are well represented in training corpus and hence higher recall.
+% \begin{frame}
+% \frametitle{Analysis}
+% \framesubtitle{per relation analysis of NumberTron vs NumberRule}
+% \begin{itemize}
+% \setlength\itemsep{1em}
+% \item For relations like FDI, Electricity production, and $CO_2$ emissions, NumberTron performs poorly because of the lack of the training data in the corpus.
+% \item Inflation and Population are well represented in training corpus and hence higher recall.
+% 
+% \end{itemize}
+% \end{frame}
+%---------------------------------------------------
 
+%---------------------------------------------------
+\section{Summary and Future Work}	
+\begin{frame}
+\frametitle{Future Work}
+\begin{itemize} 
+\setlength \itemsep{1em}
+\item \textbf{Temporal Modeling} Many of the relations that we target are time dependent.
+\item \textbf{Soft constraints in NumberTron} Instead of hardcoding true assignments to the random variables, we can think of an alternative scheme in which the keyword nodes are added to the graphical model along with edge potentials that capture the similarity between potential relation and the keywords.
+\item \textbf{Extracting with Delta Words} NumberTron and NumberRule ignore mentions that express a change rather than the absolute fact.
 \end{itemize}
 \end{frame}
-%---------------------------------------------------
 
-%---------------------------------------------------
-
-\section{Summary}
 \begin{frame}
 \frametitle{Summary}
 \begin{itemize} 
@@ -1267,6 +1276,7 @@ Mintz + Keyword + Number & \emph{60.93} & \emph{66.92} & \emph{63.78}\\
 \end{itemize}
     
 \end{frame}
+
 
 \section{Thanks!}
 %----------------------------------------------------------------------------------------
