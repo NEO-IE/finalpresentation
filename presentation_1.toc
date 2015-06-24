@@ -6,4 +6,4 @@
 \beamer@sectionintoc {4}{Peculiarities of Numerical Relation Extraction}{35}{0}{4}
 \beamer@sectionintoc {5}{NumberRule: Rule Based Relation Extraction}{43}{0}{5}
 \beamer@sectionintoc {6}{NumberTron: Probabilistic Relation Extraction}{52}{0}{6}
-\beamer@sectionintoc {7}{Summary}{81}{1}{7}
+\beamer@sectionintoc {7}{Summary}{82}{1}{7}
