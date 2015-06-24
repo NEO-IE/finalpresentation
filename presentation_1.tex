@@ -356,8 +356,6 @@ to a number \\~\\
   \item Is there a middle ground?
  \end{itemize}
 \end{frame}
----------------------------------
-
 % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \section{Peculiarities of Numerical Relation Extraction}
@@ -406,7 +404,7 @@ Number & Frequency (Avg. 57.84)\\ \hline
 	\begin{itemize}
     	\item 20 kms or 12.4 miles
    	\end{itemize}
-\item Unit extractor needs to perform unit conversions for effective matching and extraction
+\item Unit extractor needs to perform unit conversions for correct matching and extraction
 \end{itemize}
 \end{frame}
 
@@ -438,7 +436,7 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \item \emph{rural} literacy rate of India
 \item literacy rate of \emph{rural} India
 \end{itemize}
-
+\item The modifiers are usually adjectival modifiers
 \end{itemize}
 
 \end{frame}
@@ -448,9 +446,16 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \framesubtitle{Keywords}
 
 \begin{itemize}
-\item Many numerical relations are described using one or a handful of keywords.
+\setlength \itemsep{1em}
+\item Sentences expressing many numerical relations usually include one or a handful of keywords.
+\item Sentences expressing the GDP of a country with mentioning the term \textit{GDP}? Sentences expressing inflation without mentioning inflation?
+\item \textit{Founder of} without the phrase \textit{founder of}?
 \begin{itemize}
-\item For example, sentences expressing \emph{inflation rate}, \emph{GDP}, \emph{life expectancy} would often use these keywords.
+\item Bill Gates is the founder of Microsoft
+\item Bill Gates founded Microsoft
+\item Bill Gates is the father of Microsoft
+\item Bill Gates laid the foundation stone of Microsoft
+\item Bill Gates started Microsoft
 \end{itemize}
 \end{itemize}
 
@@ -605,6 +610,56 @@ $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{ns
 \newcommand{\vn}{{\mathbf n}}
 \newcommand{\cR}{{\cal R}}
 
+\begin{frame}
+\frametitle{NumberTron}
+\begin{itemize}
+ \item An Unlabeled Corpus (Sentencified, pruned to retain sentences having a country and a number)
+ \item A Database of numerical facts, derived from data.worldbank.org.
+ \item A Database of keywords
+\end{itemize}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|l|}
+\hline
+ Code & Num & Rel \\
+\hline
+/m/047t\_&2070833572.62&LIFE \\
+/m/04hzj&645658563.8&GOODS \\
+/m/04xn\_&1708632373.17&LIFE \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{table}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|}
+\hline 
+ Relation & Keywords\\
+\hline
+ Internet User \% &internet\\
+Land Area &area, land\\
+Population &population, people, inhabitants\\
+GDP & gross, domestic, GDP\\
+$CO_2$ emission & carbon, emission, CO2, kilotons\\
+Inflation & inflation\\
+FDI &foreign, direct, investment, FDI\\
+Goods Export & goods, export\\
+Life Expectancy & life, expectancy\\
+Electricity Production & electricity\\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Pre-specified keywords}
+\label{table:keywords}
+\end{table}
+\end{column}%
+
+\end{columns}
+
+\end{frame}
 
 %------------------------------------------------
 \begin{frame}
