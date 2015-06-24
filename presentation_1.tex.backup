@@ -385,7 +385,7 @@ to a number \\~\\
 
 \begin{center}
 \begin{tabular}{l|l}
-Number & Frequency\\ \hline
+Number & Frequency (Avg. 57.84)\\ \hline
 3 & 85333\\
 20 & 86359\\
 2 & 91608\\
@@ -627,6 +627,18 @@ unit variants like "mile", "km" to a canonical SI unit, "meter".}
 %------------------------------------------------
 
 %------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron}
+\framesubtitle{Definitions}
+For  $e =$ (China)
+\begin{itemize}
+\setlength \itemsep{1em}
+ \item $S_e = $  
+ \{\textit{\color{blue}.. China says that annual inflation...to 4.3 percent, ...China would initiate ... that its inflation rate ... 4.3 percent in October, ...the number of chinese internet users has grown to 840 million...}\}
+ \item Let $Q_e$ denote the distinct numbers with unit that appear in $S_e$ \footnote{We use the unit tagger by \cite{sarawagi2014} to identity units of numbers in the text and to convert all unit variants like "mile", "km" to a canonical SI unit, "meter".}
+\item $\forall q \in Q_e$, let $S_{e,q} \subseteq S_e$ denote the sentences that mention $e$ and $q$. 
+\end{itemize}
+\end{frame}
 
 
 \begin{frame}
