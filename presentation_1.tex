@@ -1084,8 +1084,29 @@ where $\phi_s$ captures the features in sentence $S$ tied to entity $e$ and numb
 \begin{itemize}
 \setlength\itemsep{2em}
 \item \textbf{Recall \textendash Prior Baseline: } For each unit, predict the relation with the highest \emph{test} prior ignoring the "none-of-the-above" class.
+\begin{small}
+\begin{table}[h]
+\centering
+%     \begin{adjustbox}{width=\textwidth,center}
+    % \begin{adjustbox}{center}
+     \begin{adjustbox}{max width=\textwidth}
+        \begin{tabular}{|l|c|c|c|}
+            \hline
+            
+            \multicolumn{1}{|l|}{Inflation}  & \multicolumn{1}{c}{percent} & \multicolumn{1}{|c|}{51} & \multirow{2}{*}{84} \\\cline{1-2}
+            \multicolumn{1}{|l|}{Internet Users} & \multicolumn{1}{c}{percent} & \multicolumn{1}{|c|}{15} & \\\cline{1-2} 
+            
+            \hline
+        \end{tabular}
+	\end{adjustbox}
+%     \vspace{ - 05 mm}
+   
+\end{table}
+\end{small}
+
 \begin{itemize}
-	\item All the numbers with the unit "USD" will be labeled 'Goods Exported' since it is most frequent class ignoring the "none-of-the-above" class. \pause
+	\item All the numbers with the unit "percent" will be labeled 'Inflation' since it is most frequent class 
+	ignoring the "none-of-the-above" class. \pause
 \end{itemize}
 
 
@@ -1102,31 +1123,12 @@ where $\phi_s$ captures the features in sentence $S$ tied to entity $e$ and numb
 \frametitle{Results}
 \framesubtitle{Numbertron vs NumberRule vs Baselines}
 
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/main_comparison.eps}
+\end{figure}
 
-\begin{small}
-\begin{table}
-\begin{tabular}{|l|c|c|c|}
-
-\hline
-\textbf{System} &  \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score}\\
-\hline 
-\hline
-
-MultiR++ & 31.81 & 28.10 & 29.84\\
-\hline
-Recall-Prior & 28.18 & 86.19 & 42.47\\
-\hline
-NumberRule & 59.30 & 53.60 & 56.30\\
-\hline
-NumberTron & 60.93 & 66.92 & 63.78 \\
-\hline
-\end{tabular}
-\caption{Aggregate results. NumberTron outperforms all other methods.}
-\label{main_results_table}
-\end{table}
-\end{small}
 \begin{itemize}
-\item Statistical method like NumberTron outperforms NumberRule on increased recall, which jumps from 53.6\% to 67%
+\item Statistical method like NumberTron outperforms NumberRule on increased recall, which jumps from 53.6\% to 67\%
 \item MultiR++ performs poorly because it does not model peculiarities of numerical relations.
 \end{itemize}
 \end{frame}
