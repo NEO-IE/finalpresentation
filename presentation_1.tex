@@ -185,8 +185,6 @@ Indian Institute of Technology Bombay\\ % Your institution for the title page
 
 %------------------------------------------------
 \section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-
-
 %PART 1 : Motivation
 \begin{frame}{Entities have Numerical Attributes}
 
@@ -253,7 +251,7 @@ Indian Institute of Technology Bombay\\ % Your institution for the title page
 
 
 
-\section{Problem Statement}
+\section*{Problem Statement}
 \begin{frame}{Problem Statement}
  \begin{itemize}
   \item Given that we know a lot of facts about some entities, can we train extractors that run over the web and pull similar facts about other entities?
@@ -861,7 +859,7 @@ Number Features & Num: Billion	Num: Integer \\
    \eta * (
    \mathterm[t3]{t_i} - 
    \mathterm[t4]{o_i} ) * 
-   \mathterm[t5]{x_i} ) 
+   \mathterm[t5]{x_i} 
 \end{gather}
 
 
@@ -884,6 +882,20 @@ Number Features & Num: Billion	Num: Integer \\
 \end{frame}
 %------------------------------------------------
 
+%------------------------------------------------
+\begin{frame}
+\frametitle{NumberTron Training}
+\framesubtitle{True Labels: Distant Supervision}
+\begin{figure}
+\includegraphics[width=0.4\textwidth, height=0.4\textheight]{images/matching.eps}
+\end{figure}
+\begin{itemize}
+ \item Is 3.8\% within $\delta\%$ of the values in the knowledge base for Internet User Percent of Hungary?
+ \item $\delta = 20$
+\end{itemize}
+
+\end{frame}
+%------------------------------------------------
 
 %------------------------------------------------
 \begin{frame}

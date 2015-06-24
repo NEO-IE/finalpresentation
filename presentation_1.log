@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.17)  24 JUN 2015 18:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.17)  24 JUN 2015 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1099,23 +1099,23 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <images/motivation.png, id=88, 747.79375pt x 1056.94875pt>
+] <images/motivation.png, id=82, 747.79375pt x 1056.94875pt>
 File: images/motivation.png Graphic file (type png)
 
 <use images/motivation.png>
-Package pdftex.def Info: images/motivation.png used on input line 198.
+Package pdftex.def Info: images/motivation.png used on input line 196.
 (pdftex.def)             Requested size: 171.14764pt x 241.89964pt.
 
-Overfull \vbox (24.16243pt too high) detected at line 198
+Overfull \vbox (24.16243pt too high) detected at line 196
  []
 
 [4
 
  <./images/motivation.png>]
-<images/car.pdf, id=96, 364.19528pt x 273.14645pt>
+<images/car.pdf, id=90, 364.19528pt x 273.14645pt>
 File: images/car.pdf Graphic file (type pdf)
  <use images/car.pdf>
-Package pdftex.def Info: images/car.pdf used on input line 206.
+Package pdftex.def Info: images/car.pdf used on input line 204.
 (pdftex.def)             Requested size: 163.88635pt x 122.91476pt.
 
 [5
@@ -1135,16 +1135,16 @@ Package pdftex.def Info: images/car.pdf used on input line 206.
 ]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 229.
+(pdftex.def)                using `viewport' instead on input line 227.
 
-<images/resultindia.png, id=149, 1371.1225pt x 770.88pt>
+<images/resultindia.png, id=143, 1371.1225pt x 770.88pt>
 File: images/resultindia.png Graphic file (type png)
 
 <use images/resultindia.png>
-Package pdftex.def Info: images/resultindia.png used on input line 229.
+Package pdftex.def Info: images/resultindia.png used on input line 227.
 (pdftex.def)             Requested size: 342.78062pt x 185.94469pt.
 
-Overfull \hbox (0.48532pt too wide) in paragraph at lines 229--229
+Overfull \hbox (0.48532pt too wide) in paragraph at lines 227--227
  [] 
  []
 
@@ -1153,28 +1153,28 @@ Overfull \hbox (0.48532pt too wide) in paragraph at lines 229--229
  <./images/resultindia.png>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 237.
+(pdftex.def)                using `viewport' instead on input line 235.
 
-<images/resultmumbai.png, id=156, 1371.1225pt x 770.88pt>
+<images/resultmumbai.png, id=150, 1371.1225pt x 770.88pt>
 File: images/resultmumbai.png Graphic file (type png)
 
 <use images/resultmumbai.png>
-Package pdftex.def Info: images/resultmumbai.png used on input line 237.
+Package pdftex.def Info: images/resultmumbai.png used on input line 235.
 (pdftex.def)             Requested size: 342.78062pt x 185.94469pt.
 
-Overfull \hbox (0.48532pt too wide) in paragraph at lines 237--237
+Overfull \hbox (0.48532pt too wide) in paragraph at lines 235--235
  [] 
  []
 
 [13
 
  <./images/resultmumbai.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 252.
+LaTeX Font Info:    Try loading font information for U+msa on input line 250.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 252.
+LaTeX Font Info:    Try loading font information for U+msb on input line 250.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1193,87 +1193,87 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [20
 
-] [21
-
 ]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 283.
+(pdftex.def)                using `viewport' instead on input line 281.
 
-<images/ex_2.png, id=208, 343.2825pt x 84.315pt>
+<images/ex_2.png, id=198, 343.2825pt x 84.315pt>
 File: images/ex_2.png Graphic file (type png)
  <use images/ex_2.png>
-Package pdftex.def Info: images/ex_2.png used on input line 283.
+Package pdftex.def Info: images/ex_2.png used on input line 281.
 (pdftex.def)             Requested size: 537.33887pt x 25.00346pt.
 
-Overfull \hbox (216.94362pt too wide) in paragraph at lines 283--283
+Overfull \hbox (216.94362pt too wide) in paragraph at lines 281--281
  [] 
  []
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 283.
+(pdftex.def)                using `viewport' instead on input line 281.
 
-<images/ex_3.png, id=209, 1020.81375pt x 74.2775pt>
+<images/ex_3.png, id=199, 1020.81375pt x 74.2775pt>
 File: images/ex_3.png Graphic file (type png)
  <use images/ex_3.png>
-Package pdftex.def Info: images/ex_3.png used on input line 283.
+Package pdftex.def Info: images/ex_3.png used on input line 281.
 (pdftex.def)             Requested size: 342.98485pt x 15.95978pt.
 
-Overfull \hbox (22.5896pt too wide) in paragraph at lines 283--283
+Overfull \hbox (22.5896pt too wide) in paragraph at lines 281--281
  [] 
  []
 
-[22
+[21
 
- <./images/ex_2.png> <./images/ex_3.png>] [23
+ <./images/ex_2.png> <./images/ex_3.png>] [22
+
+] [23
 
 ] [24
 
 ] [25
 
-] [26
-
 ]
-<images/ex_4.png, id=237, 755.82375pt x 227.85126pt>
+<images/ex_4.png, id=227, 755.82375pt x 227.85126pt>
 File: images/ex_4.png Graphic file (type png)
  <use images/ex_4.png>
-Package pdftex.def Info: images/ex_4.png used on input line 335.
+Package pdftex.def Info: images/ex_4.png used on input line 333.
 (pdftex.def)             Requested size: 273.83728pt x 82.55136pt.
 
-<images/ex_5.png, id=238, 834.11626pt x 251.94125pt>
+<images/ex_5.png, id=228, 834.11626pt x 251.94125pt>
 File: images/ex_5.png Graphic file (type png)
  <use images/ex_5.png>
-Package pdftex.def Info: images/ex_5.png used on input line 335.
+Package pdftex.def Info: images/ex_5.png used on input line 333.
 (pdftex.def)             Requested size: 273.83728pt x 82.7103pt.
 
-[27
+[26
 
  <./images/ex_4.png> <./images/ex_5.png>]
 File: images/ex_4.png Graphic file (type png)
  <use images/ex_4.png>
-Package pdftex.def Info: images/ex_4.png used on input line 335.
+Package pdftex.def Info: images/ex_4.png used on input line 333.
 (pdftex.def)             Requested size: 273.83728pt x 82.55136pt.
 File: images/ex_5.png Graphic file (type png)
 
 <use images/ex_5.png>
-Package pdftex.def Info: images/ex_5.png used on input line 335.
+Package pdftex.def Info: images/ex_5.png used on input line 333.
 (pdftex.def)             Requested size: 273.83728pt x 82.7103pt.
- [28
+ [27
 
 ]
 File: images/ex_4.png Graphic file (type png)
  <use images/ex_4.png>
-Package pdftex.def Info: images/ex_4.png used on input line 335.
+Package pdftex.def Info: images/ex_4.png used on input line 333.
 (pdftex.def)             Requested size: 273.83728pt x 82.55136pt.
 File: images/ex_5.png Graphic file (type png)
  <use images/ex_5.png>
-Package pdftex.def Info: images/ex_5.png used on input line 335.
+Package pdftex.def Info: images/ex_5.png used on input line 333.
 (pdftex.def)             Requested size: 273.83728pt x 82.7103pt.
- [29
+ [28
 
 ]
-[30
+[29
+
+] [30
 
 ] [31
 
@@ -1295,15 +1295,15 @@ pdf>
 (epstopdf)                    size: 151221 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/popularitynumbers-e
 ps-converted-to.pdf images/popularitynumbers.eps>
-(epstopdf)             \includegraphics on input line 374.
+(epstopdf)             \includegraphics on input line 390.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/popularitynumbers-eps-converted-to.pdf, id=286, 958.58125pt x 476.78125
+<images/popularitynumbers-eps-converted-to.pdf, id=281, 958.58125pt x 476.78125
 pt>
 File: images/popularitynumbers-eps-converted-to.pdf Graphic file (type pdf)
  <use images/popularitynumbers-eps-converted-to.pdf>
 Package pdftex.def Info: images/popularitynumbers-eps-converted-to.pdf used on 
-input line 374.
+input line 390.
 (pdftex.def)             Requested size: 239.60567pt x 119.17319pt.
  [36
 
@@ -1329,19 +1329,21 @@ pdf>
 (epstopdf)                    size: 105574 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/longliverulebased-e
 ps-converted-to.pdf images/longliverulebased.eps>
-(epstopdf)             \includegraphics on input line 478.
+(epstopdf)             \includegraphics on input line 494.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/longliverulebased-eps-converted-to.pdf, id=327, 1215.54124pt x 876.2737
+<images/longliverulebased-eps-converted-to.pdf, id=322, 1215.54124pt x 876.2737
 4pt>
 File: images/longliverulebased-eps-converted-to.pdf Graphic file (type pdf)
  <use images/longliverulebased-eps-converted-to.pdf>
 Package pdftex.def Info: images/longliverulebased-eps-converted-to.pdf used on 
-input line 478.
+input line 494.
 (pdftex.def)             Requested size: 239.60567pt x 172.72455pt.
  [43
 
- <./images/longliverulebased-eps-converted-to.pdf>]
+ <./images/longliverulebased-eps-converted-to.pdf>] [44
+
+]
 Package epstopdf Info: Source file: <images/dep.eps>
 (epstopdf)                    date: 2015-06-23 13:39:13
 (epstopdf)                    size: 424466 bytes
@@ -1350,47 +1352,47 @@ Package epstopdf Info: Source file: <images/dep.eps>
 (epstopdf)                    size: 69161 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/dep-eps-converted-t
 o.pdf images/dep.eps>
-(epstopdf)             \includegraphics on input line 493.
+(epstopdf)             \includegraphics on input line 531.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/dep-eps-converted-to.pdf, id=341, 817.0525pt x 121.45375pt>
 File: images/dep-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/dep-eps-converted-to.pdf>
-Package pdftex.def Info: images/dep-eps-converted-to.pdf used on input line 493
+Package pdftex.def Info: images/dep-eps-converted-to.pdf used on input line 531
 .
 (pdftex.def)             Requested size: 239.60567pt x 35.61542pt.
- [44
+ [45
 
  <./images/dep-eps-converted-to.pdf>]
-[45
+[46
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 526.
+(Font)              using `OT1/cmss/bx/n' instead on input line 564.
 
-[46
-
-] [47
+[47
 
 ] [48
 
-
 ] [49
 
+
+] [50
+
 ]
-Underfull \hbox (badness 10000) in alignment at lines 603--603
+Underfull \hbox (badness 10000) in alignment at lines 644--644
 [][] 
  []
 
-[50
-
-] [51
+[51
 
 ] [52
 
 ] [53
+
+] [54
 
 ]
 Package epstopdf Info: Source file: <images/numbertronmodel.eps>
@@ -1402,7 +1404,7 @@ f>
 (epstopdf)                    size: 20056 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/numbertronmodel-eps
 -converted-to.pdf images/numbertronmodel.eps>
-(epstopdf)             \includegraphics on input line 686.
+(epstopdf)             \includegraphics on input line 727.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/numbertronmodel-eps-converted-to.pdf, id=407, 485.815pt x 354.32375pt>
@@ -1410,21 +1412,21 @@ File: images/numbertronmodel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/numbertronmodel-eps-converted-to.pdf>
 Package pdftex.def Info: images/numbertronmodel-eps-converted-to.pdf used on in
-put line 686.
+put line 727.
 (pdftex.def)             Requested size: 239.60567pt x 174.7501pt.
- [54
+ [55
 
  <./images/numbertronmodel-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 703
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 744
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 703.
+LaTeX Font Info:    No file OMScmss.fd. on input line 744.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 703.
+(Font)              for symbol `textbraceleft' on input line 744.
 
-[55
+[56
 
 ]
 Package epstopdf Info: Source file: <images/numbertronmodel.eps>
@@ -1436,25 +1438,25 @@ f>
 (epstopdf)                    size: 20056 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/numbertronmodel-eps
 -converted-to.pdf images/numbertronmodel.eps>
-(epstopdf)             \includegraphics on input line 729.
+(epstopdf)             \includegraphics on input line 770.
 Package epstopdf Info: Output file is already uptodate.
 File: images/numbertronmodel-eps-converted-to.pdf Graphic file (type pdf)
  <use images/numbertronmodel-eps-converted-to.pdf>
 Package pdftex.def Info: images/numbertronmodel-eps-converted-to.pdf used on in
-put line 729.
+put line 770.
 (pdftex.def)             Requested size: 162.93008pt x 118.83029pt.
- [56
-
-] [57
+ [57
 
 ] [58
 
 ] [59
 
-]
-[60
+] [60
 
-] [61
+]
+[61
+
+] [62
 
 ]
 Package epstopdf Info: Source file: <images/truelabel11.eps>
@@ -1465,7 +1467,7 @@ Package epstopdf Info: Source file: <images/truelabel11.eps>
 (epstopdf)                    size: 16454 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel11-eps-con
 verted-to.pdf images/truelabel11.eps>
-(epstopdf)             \includegraphics on input line 841.
+(epstopdf)             \includegraphics on input line 882.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/truelabel11-eps-converted-to.pdf, id=463, 464.73625pt x 328.22626pt>
@@ -1473,15 +1475,36 @@ File: images/truelabel11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel11-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel11-eps-converted-to.pdf used on input 
-line 841.
+line 882.
 (pdftex.def)             Requested size: 342.3039pt x 208.92218pt.
 
-Overfull \vbox (16.78497pt too high) detected at line 841
+Overfull \vbox (16.78497pt too high) detected at line 882
  []
 
-[62
+[63
 
  <./images/truelabel11-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/matching.eps>
+(epstopdf)                    date: 2015-06-24 20:31:26
+(epstopdf)                    size: 208371 bytes
+(epstopdf)             Output file: <images/matching-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-06-24 20:31:54
+(epstopdf)                    size: 68902 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/matching-eps-conver
+ted-to.pdf images/matching.eps>
+(epstopdf)             \includegraphics on input line 897.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/matching-eps-converted-to.pdf, id=475, 1173.38374pt x 757.83125pt>
+File: images/matching-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/matching-eps-converted-to.pdf>
+Package pdftex.def Info: images/matching-eps-converted-to.pdf used on input lin
+e 897.
+(pdftex.def)             Requested size: 136.91472pt x 104.45363pt.
+ [64
+
+ <./images/matching-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/truelabel12.eps>
 (epstopdf)                    date: 2015-06-23 13:39:13
 (epstopdf)                    size: 38866 bytes
@@ -1490,21 +1513,21 @@ Package epstopdf Info: Source file: <images/truelabel12.eps>
 (epstopdf)                    size: 16169 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel12-eps-con
 verted-to.pdf images/truelabel12.eps>
-(epstopdf)             \includegraphics on input line 852.
+(epstopdf)             \includegraphics on input line 907.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel12-eps-converted-to.pdf, id=475, 440.64626pt x 318.18875pt>
+<images/truelabel12-eps-converted-to.pdf, id=484, 440.64626pt x 318.18875pt>
 File: images/truelabel12-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel12-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel12-eps-converted-to.pdf used on input 
-line 852.
+line 907.
 (pdftex.def)             Requested size: 342.31088pt x 208.91765pt.
 
-Overfull \vbox (16.78044pt too high) detected at line 852
+Overfull \vbox (16.78044pt too high) detected at line 907
  []
 
-[63
+[65
 
  <./images/truelabel12-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/truelabel13.eps>
@@ -1515,21 +1538,21 @@ Package epstopdf Info: Source file: <images/truelabel13.eps>
 (epstopdf)                    size: 17188 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel13-eps-con
 verted-to.pdf images/truelabel13.eps>
-(epstopdf)             \includegraphics on input line 863.
+(epstopdf)             \includegraphics on input line 918.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel13-eps-converted-to.pdf, id=487, 400.49625pt x 281.05pt>
+<images/truelabel13-eps-converted-to.pdf, id=496, 400.49625pt x 281.05pt>
 File: images/truelabel13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel13-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel13-eps-converted-to.pdf used on input 
-line 863.
+line 918.
 (pdftex.def)             Requested size: 342.31786pt x 208.91719pt.
 
-Overfull \vbox (16.77998pt too high) detected at line 863
+Overfull \vbox (16.77998pt too high) detected at line 918
  []
 
-[64
+[66
 
  <./images/truelabel13-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/truelabel14.eps>
@@ -1540,21 +1563,21 @@ Package epstopdf Info: Source file: <images/truelabel14.eps>
 (epstopdf)                    size: 22103 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/truelabel14-eps-con
 verted-to.pdf images/truelabel14.eps>
-(epstopdf)             \includegraphics on input line 874.
+(epstopdf)             \includegraphics on input line 929.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/truelabel14-eps-converted-to.pdf, id=499, 448.67625pt x 281.05pt>
+<images/truelabel14-eps-converted-to.pdf, id=508, 448.67625pt x 281.05pt>
 File: images/truelabel14-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/truelabel14-eps-converted-to.pdf>
 Package pdftex.def Info: images/truelabel14-eps-converted-to.pdf used on input 
-line 874.
+line 929.
 (pdftex.def)             Requested size: 342.30513pt x 208.91719pt.
 
-Overfull \vbox (16.77998pt too high) detected at line 874
+Overfull \vbox (16.77998pt too high) detected at line 929
  []
 
-[65
+[67
 
  <./images/truelabel14-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_1.eps>
@@ -1565,21 +1588,21 @@ Package epstopdf Info: Source file: <images/fullinf_1.eps>
 (epstopdf)                    size: 85944 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_1-eps-conve
 rted-to.pdf images/fullinf_1.eps>
-(epstopdf)             \includegraphics on input line 885.
+(epstopdf)             \includegraphics on input line 940.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_1-eps-converted-to.pdf, id=515, 444.66125pt x 403.5075pt>
+<images/fullinf_1-eps-converted-to.pdf, id=525, 444.66125pt x 403.5075pt>
 File: images/fullinf_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_1-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_1-eps-converted-to.pdf used on input li
-ne 885.
+ne 940.
 (pdftex.def)             Requested size: 342.29523pt x 221.97906pt.
 
-Overfull \vbox (16.24185pt too high) detected at line 885
+Overfull \vbox (16.24185pt too high) detected at line 940
  []
 
-[66
+[68
 
  <./images/fullinf_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_2.eps>
@@ -1590,21 +1613,21 @@ Package epstopdf Info: Source file: <images/fullinf_2.eps>
 (epstopdf)                    size: 58294 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_2-eps-conve
 rted-to.pdf images/fullinf_2.eps>
-(epstopdf)             \includegraphics on input line 896.
+(epstopdf)             \includegraphics on input line 951.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_2-eps-converted-to.pdf, id=545, 444.66125pt x 403.5075pt>
+<images/fullinf_2-eps-converted-to.pdf, id=555, 444.66125pt x 403.5075pt>
 File: images/fullinf_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_2-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_2-eps-converted-to.pdf used on input li
-ne 896.
+ne 951.
 (pdftex.def)             Requested size: 342.29523pt x 221.97906pt.
 
-Overfull \vbox (16.24185pt too high) detected at line 896
+Overfull \vbox (16.24185pt too high) detected at line 951
  []
 
-[67
+[69
 
  <./images/fullinf_2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_3.eps>
@@ -1615,21 +1638,21 @@ Package epstopdf Info: Source file: <images/fullinf_3.eps>
 (epstopdf)                    size: 113873 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_3-eps-conve
 rted-to.pdf images/fullinf_3.eps>
-(epstopdf)             \includegraphics on input line 907.
+(epstopdf)             \includegraphics on input line 962.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_3-eps-converted-to.pdf, id=576, 444.66125pt x 337.26pt>
+<images/fullinf_3-eps-converted-to.pdf, id=585, 444.66125pt x 337.26pt>
 File: images/fullinf_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_3-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_3-eps-converted-to.pdf used on input li
-ne 907.
+ne 962.
 (pdftex.def)             Requested size: 342.29523pt x 221.97989pt.
 
-Overfull \vbox (16.24268pt too high) detected at line 907
+Overfull \vbox (16.24268pt too high) detected at line 962
  []
 
-[68
+[70
 
  <./images/fullinf_3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/fullinf_4.eps>
@@ -1640,39 +1663,35 @@ Package epstopdf Info: Source file: <images/fullinf_4.eps>
 (epstopdf)                    size: 124425 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/fullinf_4-eps-conve
 rted-to.pdf images/fullinf_4.eps>
-(epstopdf)             \includegraphics on input line 918.
+(epstopdf)             \includegraphics on input line 973.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/fullinf_4-eps-converted-to.pdf, id=606, 444.66125pt x 350.30875pt>
+<images/fullinf_4-eps-converted-to.pdf, id=616, 444.66125pt x 350.30875pt>
 File: images/fullinf_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/fullinf_4-eps-converted-to.pdf>
 Package pdftex.def Info: images/fullinf_4-eps-converted-to.pdf used on input li
-ne 918.
+ne 973.
 (pdftex.def)             Requested size: 342.29523pt x 221.97855pt.
 
-Overfull \vbox (16.24133pt too high) detected at line 918
+Overfull \vbox (16.24133pt too high) detected at line 973
  []
 
-[69
+[71
 
- <./images/fullinf_4-eps-converted-to.pdf>] [70
-
-] [71
-
-] [72
+ <./images/fullinf_4-eps-converted-to.pdf>] [72
 
 ] [73
 
-]
-Overfull \vbox (12.35162pt too high) detected at line 1022
- []
-
-[74
+] [74
 
 ] [75
 
-] [76
+]
+Overfull \vbox (12.35162pt too high) detected at line 1077
+ []
+
+[76
 
 ] [77
 
@@ -1690,84 +1709,88 @@ Overfull \vbox (12.35162pt too high) detected at line 1022
 
 ] [84
 
+] [85
+
+] [86
+
 ]
-Underfull \hbox (badness 7631) in paragraph at lines 1256--1256
+Underfull \hbox (badness 7631) in paragraph at lines 1312--1312
 []|\OT1/cmss/m/n/10.95 A Graph-i-cal Model
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 1256--1256
+Underfull \hbox (badness 1983) in paragraph at lines 1312--1312
 \OT1/cmss/m/n/10.95 with Per-cep-tron like
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 1256--1256
+Underfull \hbox (badness 5302) in paragraph at lines 1312--1312
 \OT1/cmss/m/n/10.95 words + Nu-mer-i-cal
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 1256--1256
+Underfull \hbox (badness 3536) in paragraph at lines 1312--1312
 []|\OT1/cmss/bx/it/10.95 Handling Men-tions
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 1256--1256
+Underfull \hbox (badness 5403) in paragraph at lines 1312--1312
 []|\OT1/cmss/m/n/10.95 No ex-trac-tion if a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1256--1256
+Underfull \hbox (badness 10000) in paragraph at lines 1312--1312
 []|\OT1/cmss/m/n/10.95 Remove sen-tences
  []
 
-[85
+[87
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
+Underfull \hbox (badness 10000) in paragraph at lines 1324--1324
 []|\OT1/cmss/bx/it/10.95 Common Num-ber
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 1268--1268
+Underfull \hbox (badness 1383) in paragraph at lines 1324--1324
 []|\OT1/cmss/m/n/10.95 Features in-cluded to
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 1268--1268
+Underfull \hbox (badness 4072) in paragraph at lines 1324--1324
 \OT1/cmss/m/n/10.95 frac-tion), mag-ni-tude
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 1268--1268
+Underfull \hbox (badness 5374) in paragraph at lines 1324--1324
 []|\OT1/cmss/m/n/10.95 Handled by at-tach-
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 1268--1268
+Underfull \hbox (badness 3872) in paragraph at lines 1324--1324
 \OT1/cmss/m/n/10.95 mod-i-fy-ing de-pen-den-
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 1268--1268
+Underfull \hbox (badness 4328) in paragraph at lines 1324--1324
 \OT1/cmss/m/n/10.95 cies, \OT1/cmss/m/it/10.95 ur-ban \OT1/cmss/m/n/10.95 pop-u
 -la-
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 1268--1268
+Underfull \hbox (badness 2181) in paragraph at lines 1324--1324
 []|\OT1/cmss/m/n/10.95 Not han-dled in the
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 1268--1268
+Underfull \hbox (badness 1077) in paragraph at lines 1324--1324
 \OT1/cmss/m/n/10.95 model, can be han-
  []
 
-[86
+[88
 
-] (./presentation_1.bbl) [87
+] (./presentation_1.bbl) [89
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [88
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [90
 
 
 ]
@@ -1780,14 +1803,14 @@ Underfull \hbox (badness 1077) in paragraph at lines 1268--1268
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1276.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1276.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1332.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1332.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1276.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1276.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1332.
 
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: 1CEF35ACA4563EA8627760AE38503E42;599.
+(rerunfilecheck)             Checksum: 07D1184DCDF80CC99C170C6F5042E23F;547.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1796,13 +1819,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1276.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1332.
  ) 
 Here is how much of TeX's memory you used:
- 20989 strings out of 495017
- 392367 string characters out of 6181021
+ 21001 strings out of 495017
+ 392604 string characters out of 6181021
  479524 words of memory out of 5000000
- 23445 multiletter control sequences out of 15000+600000
+ 23452 multiletter control sequences out of 15000+600000
  16424 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,15n,60p,403b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1817,10 +1840,10 @@ type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
 lic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb>
-Output written on presentation_1.pdf (88 pages, 1861493 bytes).
+Output written on presentation_1.pdf (90 pages, 1930799 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 618 compressed objects within 7 object streams
- 197 named destinations out of 1000 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 846 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 201 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
