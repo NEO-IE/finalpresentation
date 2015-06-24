@@ -331,9 +331,12 @@ to a number \\~\\
 \begin{frame}{Possible Workflow} \pause
 
 \begin{algorithmic}[1]
-\State \textbf{Collect enough examples} for each relation so that there are sufficient patterns and enough redundancy to exploit. \\
-\State \textbf{Extract features} (important keywords, grammatical structure, parse trees, etc.) for these sentences. \\
-\State \textbf{Train} a multi-class classifier on this training data. \\
+\State \textbf{Collect enough examples} for each relation so that there are sufficient patterns and enough redundancy to exploit.
+\item[]
+\State \textbf{Extract features} (important keywords, grammatical structure, parse trees, etc.) for these sentences.
+\item[]
+\State \textbf{Train} a multi-class classifier on this training data.
+\item[]
 \For{$sentence\ s \in Corpus $}
 \State \textbf{Extract} features for $s$.
 \State \textbf{Predict} the relation using the model for these features.
@@ -667,7 +670,7 @@ $\xrightarrow{prep\_for}$\emph{\color{green}\textbf{population}}$\xrightarrow{ns
 /m/04w4s&32870000000.0&AGL\\
 /m/035qy&15.5100261552&INF\\
 /m/0d05q4&12.6628528269&INF\\
-/m/088q4&1562886291.51&LIFE \\
+/m/088q4&1562886291.51&LIFE\\
 \hline
 \end{tabular}
 \end{adjustbox}
