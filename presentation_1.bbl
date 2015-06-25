@@ -8,12 +8,6 @@ Razvan~C. Bunescu and Raymond~J. Mooney.
   of the Conference, 6-8 October 2005, Vancouver, British Columbia, Canada},
   2005.
 
-\bibitem[CLR13]{chiticariu2013rule}
-Laura Chiticariu, Yunyao Li, and Frederick~R Reiss.
-\newblock Rule-based information extraction is dead! long live rule-based
-  information extraction systems!
-\newblock In {\em EMNLP}, pages 827--832, 2013.
-
 \bibitem[MBSJ09]{mintz}
 Mike Mintz, Steven Bills, Rion Snow, and Daniel Jurafsky.
 \newblock Distant supervision for relation extraction without labeled data.
