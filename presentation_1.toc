@@ -2,9 +2,9 @@
 \select@language {english}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Relation Extraction as a Machine Learning Problem}{22}{0}{2}
-\beamer@sectionintoc {3}{Peculiarities of Numerical Relation Extraction}{34}{0}{3}
-\beamer@sectionintoc {4}{NumberRule: Rule Based Relation Extraction}{41}{0}{4}
-\beamer@sectionintoc {5}{NumberTron: Probabilistic Relation Extraction}{50}{0}{5}
-\beamer@sectionintoc {6}{Results}{72}{1}{6}
-\beamer@sectionintoc {7}{Summary and Future Work}{82}{1}{7}
-\beamer@sectionintoc {8}{Thanks!}{85}{1}{8}
+\beamer@sectionintoc {3}{Peculiarities of Numerical Relation Extraction}{33}{0}{3}
+\beamer@sectionintoc {4}{NumberRule: Rule Based Relation Extraction}{40}{0}{4}
+\beamer@sectionintoc {5}{NumberTron: Probabilistic Relation Extraction}{49}{0}{5}
+\beamer@sectionintoc {6}{Results}{71}{1}{6}
+\beamer@sectionintoc {7}{Summary and Future Work}{81}{1}{7}
+\beamer@sectionintoc {8}{Thanks!}{84}{1}{8}
