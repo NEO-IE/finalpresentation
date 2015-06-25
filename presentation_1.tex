@@ -202,12 +202,12 @@
  
  \begin{itemize}
 
-  \item For popular entities, finding complete knowledge bases is possible. \pause \\~\\
-  \item data.worldbank.org, Wikipedia infoboxes, freebase ... \pause \\~\\
-  \item What about less popular entities?  \pause 
+  \item For popular entities, finding complete knowledge bases is possible.  \\~\\
+  \item data.worldbank.org, Wikipedia infoboxes, freebase \\~\\
+  \item What about less popular entities?
     \begin{itemize}
-      \item What is the population of Arbit Apartments, Powai? \pause \\~\\
-      \item What is the GDP of Sugarcane Industry of India? \pause \\~\\
+      \item What is the population of Arbit Apartments, Powai? \\~\\
+      \item What is the GDP of Sugarcane Industry of India?  \\~\\
       \item Percent of Internet users in Mumbai? 
     \end{itemize}
  \end{itemize} 
@@ -232,15 +232,10 @@
 \begin{frame}{Motivation}
 
 \begin{itemize}
- \item  Web is huge.  \pause \\~\\
- \item Probably, there is some page which contains the information we are looking for. \pause \\~\\
- \item The way in which you express a fact about an entity depends on the fact, and not the entity. \pause \\~\\
- \item We may expect \textbf{the sentence structure} \footnote{More on this in the coming slides} to be similar. \pause
- \begin{itemize}
-    \item Population of India reached 1.3 billion, making it the second largest country in the world. \pause \\~\\
-    \item Population of Arbit Apartments, Powai reached 1300.
- \end{itemize}
- 
+ \item  Web is huge.  \\~\\
+ \item Probably, there is some page which contains the information we are looking for.  \\~\\
+ \item The way in which you express a fact about an entity depends on the fact, and not the entity.  \\~\\
+ \item We may expect \textbf{the sentence structure} \footnote{More on this in the coming slides} to be similar.
 \end{itemize}
 \end{frame}
 
@@ -300,7 +295,12 @@ to a number \\~\\
  \begin{itemize}
       \item The population of Australia is estimated to be 23,622,400 as of 7 October 2014. \\~\\
       \item According to an official estimate for 1 June 2014, the population of Russia is 143,800,000.   
-   \end{itemize}   
+   \end{itemize}
+%     \begin{itemize}
+%     \item Population of India reached 1.3 billion, making it the second largest country in the world.\\~\\
+%     \item Population of Arbit Apartments, Powai reached 1300.
+%  \end{itemize}
+%  
  \end{itemize}
 \end{frame}
 \begin{frame}{Relation Extraction as a Machine Learning Problem}
@@ -351,22 +351,22 @@ to a number \\~\\
  \begin{itemize}
   \item Large Corpus ($\sim$16 million sentences), hand labeling is out of question \pause \\~\\
   \item Need lots of training data to learn high quality extractors \pause \\~\\
-  \item What makes this problem interesting?
+  \item What makes this problem interesting? Never Really Been Studied!
  \end{itemize}
 \end{frame}
 
 %---------------------------------
 
-\begin{frame}{Related Work}
- \begin{itemize}
- \setlength \itemsep{2em}
-  \item Mintz et. el [2009], were the first ones to use distant supervision for relation extraction from the text.
-  \item Traditional IE deals with relations having both the arguments that are entities (e.g, Microsoft, Bill Gates).
-  \item Riedel et. al[2010] were the first ones to use graphical model for relation extraction.
-  \item Later systems MultiR (Hoffman et. al[2011]) improved upon the graphical model by improving upon the distant supervision assumption.
-  
- \end{itemize}
-\end{frame}
+% \begin{frame}{Related Work}
+%  \begin{itemize}
+%  \setlength \itemsep{2em}
+%   \item Mintz et. el [2009], were the first ones to use distant supervision for relation extraction from the text.
+%   \item Traditional IE deals with relations having both the arguments that are entities (e.g, Microsoft, Bill Gates).
+%   \item Riedel et. al[2010] were the first ones to use graphical model for relation extraction.
+%   \item Later systems MultiR (Hoffman et. al[2011]) improved upon the graphical model by improving upon the distant supervision assumption.
+%   
+%  \end{itemize}
+% \end{frame}
 
 %------------------------
 
@@ -464,8 +464,8 @@ Number & Frequency (Avg. 57.84)\\ \hline
 \begin{itemize}
 \setlength \itemsep{1em}
 \item Sentences expressing many numerical relations usually include one or a handful of keywords.
-\item Sentences expressing the GDP of a country with mentioning the term \textit{GDP}? Sentences expressing inflation without mentioning inflation?
-\item \textit{Founder of} without the phrase \textit{founder of}?
+\item Sentences expressing the GDP of a country \textbf{without} mentioning the term \textit{GDP}? Sentences expressing inflation without mentioning inflation?
+\item \textit{Founder of} relation without the phrase \textit{founder of}?
 \begin{itemize}
 \item Bill Gates is the founder of Microsoft
 \item Bill Gates founded Microsoft
@@ -563,7 +563,7 @@ If \textbf{$e_1$ and $e_2$ }are two entities mentioned in the same
 \end{frame}
 
 %------------------------------------------------
-\begin{frame}[shrink=20]
+\begin{frame}[shrink=8]
 \frametitle{NumberRule}
 \framesubtitle{Extraction Algorithm}
 	\begin{algorithmic}[1]
